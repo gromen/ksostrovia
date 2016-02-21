@@ -11,3 +11,4 @@ sitemap.xml.gz
 /wp-content/uploads/
 /wp-content/wp-cache-config.php
 vagrant.sublime-project
+/wp-content/themes/*/node_modules
