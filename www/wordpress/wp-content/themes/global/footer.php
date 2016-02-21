@@ -12,7 +12,10 @@
 ?>
 
 	</div><!-- #content -->
-
+  </div><!-- #content -->
+</div><!-- #page -->
+</div><!-- .container -->
+<div class="container">
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'global' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'global' ), 'WordPress' ); ?></a>
@@ -21,6 +24,7 @@
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
+</div><!-- #container -->
 
 <?php wp_footer(); ?>
 
