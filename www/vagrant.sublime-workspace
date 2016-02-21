@@ -1,0 +1,855 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"render",
+				"render($content['field_example"
+			],
+			[
+				"o",
+				"odpowiedzi"
+			],
+			[
+				"arra",
+				"array"
+			],
+			[
+				"padd",
+				"padding-bottom: 〔property〕"
+			],
+			[
+				"ha",
+				"h:a	height:auto"
+			],
+			[
+				"class",
+				"class"
+			],
+			[
+				"sty",
+				"style	Attr"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "site.yml",
+			"settings":
+			{
+				"buffer_size": 1668,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "www/wordpress/wp-config.php",
+			"settings":
+			{
+				"buffer_size": 1774,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 1760 files for \"vccw.dev\"\n\nC:\\Users\\marcin\\Downloads\\vccw-2.19.0\\Movefile:\n    1  local:\n    2:   vhost: \"http://vccw.dev\"\n    3    wordpress_path: \"/var/www/wordpress\"\n    4  \n\nC:\\Users\\marcin\\Downloads\\vccw-2.19.0\\provision\\default.yml:\n   17  # Network Settings\n   18  #\n   19: hostname: vccw.dev\n   20  ip: 192.168.33.10\n   21  sync_folder: 'www/wordpress'\n\n2 matches across 2 files\n",
+			"settings":
+			{
+				"buffer_size": 397,
+				"line_ending": "Windows",
+				"name": "Find Results",
+				"scratch": true
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/User/chrome.sublime-build",
+					""
+				],
+				[
+					"Packages/User/Firefox.sublime-build",
+					""
+				],
+				[
+					"Packages/User/opera.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/User/chrome.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 368.0,
+		"last_filter": "remo",
+		"selected_items":
+		[
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"packsyn",
+				"PackageSync: Sync Online - Push Settings to Online Sync Folder"
+			],
+			[
+				"pci",
+				"Package Control: Install Package"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"define",
+				"PackageSync: Sync Online - Define Online Sync Folder"
+			],
+			[
+				"pac",
+				"Package Syncing: Pull Settings"
+			],
+			[
+				"packasy",
+				"Package Syncing: Enable Syncing"
+			],
+			[
+				"packsy",
+				"Package Syncing: Disable Syncing"
+			],
+			[
+				"browse",
+				"Preferences: Browse Packages"
+			],
+			[
+				"wins",
+				"SFTP: Browse With WinSCP"
+			],
+			[
+				"sft",
+				"SFTP: Edit Server…"
+			],
+			[
+				"pacsy",
+				"PackageSync: Sync Online - Pull Settings from Online Sync Folder"
+			]
+		],
+		"width": 528.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/marcin/Downloads/vccw-2.19.0",
+		"/C/Users/marcin/Downloads/vccw-2.19.0/www",
+		"/C/Users/marcin/Downloads/vccw-2.19.0/www/wordpress"
+	],
+	"file_history":
+	[
+		"/C/Users/marcin/Downloads/vccw-2.19.0/Movefile",
+		"/C/Users/marcin/Downloads/vccw-2.19.0/www/wordpress/.gitignore",
+		"/C/Users/marcin/Downloads/vccw-2.19.0/Vagrantfile",
+		"/C/Users/marcin/Sites/devdesktop/ksostrovia/sites/all/themes/global/templates/system/html.tpl.php",
+		"/C/Users/marcin/Sites/devdesktop/ksostrovia/sites/all/themes/global/config.json",
+		"/C/Users/marcin/Sites/devdesktop/ksostrovia/sites/all/themes/global/gulpfile.js",
+		"/C/Users/marcin/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/marcin/AppData/Local/Temp/scp03884/sites/all/themes/global/templates/page-cart.tpl.php",
+		"/C/Users/marcin/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/marcin/Sites/devDesktop/ksostrovia/.gitignore",
+		"/C/Users/marcin/Downloads/Superfish-for-Drupal-1.x/Superfish-for-Drupal-1.x/README",
+		"/C/Users/marcin/Sites/devDesktop/ksostrovia/sites/ksostrovia.dd/settings.php",
+		"/C/Users/marcin/Sites/devDesktop/ksostrovia/sites/default/settings.php",
+		"/C/Users/marcin/Sites/devDesktop/ksostrovia/sites/default/default.settings.php",
+		"/C/Users/marcin/Sites/devDesktop/ksostrovia2/sites/default/settings.php",
+		"/C/Users/marcin/Desktop/ks_ostrovia_remote/sftp-config.json",
+		"/C/Users/marcin/Desktop/ks_ostrovia_remote/sites/default/settings.php",
+		"/C/Users/marcin/Desktop/ks_ostrovia_remote/sites/all/themes/global/global.info",
+		"/C/Users/marcin/Desktop/ks_ostrovia_remote/sites/all/themes/global/config.rb",
+		"/C/Users/marcin/Desktop/ks_ostrovia_remote/sites/all/themes/global/templates/region--navigation.tpl.php",
+		"/C/Users/marcin/Desktop/ks_ostrovia_remote/sites/all/themes/global/css/style.css",
+		"/C/Users/marcin/Desktop/ks_ostrovia_remote/sites/all/themes/bootstrap/templates/system/page.tpl.php",
+		"/C/Users/marcin/Desktop/ks_ostrovia_remote/sites/all/themes/global/templates/block--system--main_menu.tpl.php",
+		"/C/Users/marcin/Desktop/ks_ostrovia_remote/modules/system/page.tpl.php",
+		"/C/Users/marcin/Desktop/ks_ostrovia_remote/sites/all/themes/global/js/scripts.js",
+		"/C/Users/marcin/Desktop/ks_ostrovia_remote/sites/all/themes/global/less/templates/region--navigation.tpl.php",
+		"/C/Users/marcin/Desktop/ks_ostrovia_remote/sites/all/themes/global/less/templates/page.tpl.php",
+		"/C/Users/marcin/AppData/Local/Temp/scp27893/ksostrovia/sites/all/themes/global/less/templates/page.tpl.php",
+		"/C/wamp/www/index.php",
+		"/C/wamp/www/testmysql.php",
+		"/C/Users/marcin/AppData/Local/Temp/scp59870/htaccess.txt",
+		"/C/Users/marcin/AppData/Local/Temp/scp02810/pmwi/index.html",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/C/Users/marcin/AppData/Local/Temp/scp47127/ksostrovia/sites/default/settings.php",
+		"/C/wamp/www/ksostrovia/sites/default/settings.php",
+		"/C/Users/marcin/Desktop/ks_ostrovia_remote/sites/all/themes/global/templates/page.tpl.php",
+		"/C/Users/marcin/Desktop/ks_ostrovia_remote/sites/all/themes/global/sass/styles.scss",
+		"/C/Users/marcin/Desktop/ks_ostrovia_remote/sites/all/themes/zen/templates/page.tpl.php",
+		"/C/Users/marcin/Desktop/ks_ostrovia_remote/sites/all/themes/global/css/README.txt",
+		"/C/Users/marcin/Desktop/ks_ostrovia_remote/sites/all/themes/global/STARTERKIT.info.txt",
+		"/C/Users/marcin/Desktop/ks_ostrovia_remote/sites/all/themes/global/Gemfile",
+		"/C/Users/marcin/Desktop/ks_ostrovia_remote/sites/all/themes/global/template.php",
+		"/C/Users/marcin/Downloads/bootstrap-sass-3.3.6.tar/bootstrap-sass-3.3.6/bootstrap-sass-3.3.6/templates/project/styles.sass",
+		"/C/Users/marcin/Desktop/ks_ostrovia_remote/sites/all/themes/global/screenshot.png",
+		"/C/Users/marcin/Desktop/ks_ostrovia_remote/sites/all/themes/global/sass/_init.scss",
+		"/C/Users/marcin/Desktop/ks_ostrovia_remote/sites/all/themes/global/sass/_normalize.scss",
+		"/C/Users/marcin/Desktop/ks_ostrovia_remote/sites/all/themes/global/README.md",
+		"/C/Users/marcin/Desktop/ks_ostrovia_remote/.gitignore",
+		"/C/Users/marcin/AppData/Local/Temp/scp18293/sites/all/themes/README.txt",
+		"/C/wamp/www/Drupal/sites/all/themes/global/gulpfile.js",
+		"/C/wamp/www/Drupal/sites/all/themes/global/sass/styleee.scss",
+		"/C/wamp/www/Drupal/sites/all/themes/global/css/style.css",
+		"/C/wamp/www/Drupal/sites/all/themes/global/bootstrap/less/bootstrap.less",
+		"/C/wamp/www/Drupal/sites/all/themes/global/global.info",
+		"/C/Users/marcin/Downloads/bootstrap-sass-3.3.6.tar/bootstrap-sass-3.3.6/bootstrap-sass-3.3.6/templates/project/manifest.rb",
+		"/C/wamp/www/Drupal/sites/all/themes/global/less/variable-overrides.less",
+		"/C/Users/marcin/Desktop/marcin.direktpoint.pl/sftp-config.json",
+		"/C/Users/marcin/Desktop/marcin.direktpoint.pl/all/themes/global/package.json",
+		"/C/wamp/www/ksostrovia_wp/wp-login.php",
+		"/C/Users/marcin/Desktop/wp-config.php",
+		"/C/Users/marcin/Downloads/libraries/modernizr/modernizr-min.js",
+		"/C/Users/marcin/Desktop/marcin.direktpoint.pl/all/themes/global/templates/README.md",
+		"/C/Users/marcin/Desktop/marcin.direktpoint.pl/all/modules/navbar/css/navbar.module.css",
+		"/C/Users/marcin/Desktop/marcin.direktpoint.pl/all/themes/global/less/style.less",
+		"/E/PS3/Zombies rus/PS3_GAME/PARAM.SFO",
+		"/C/Users/marcin/Desktop/marcin.direktpoint.pl/all/themes/global/templates/field--field_image.tpl.pl",
+		"/C/Users/marcin/AppData/Roaming/npm-cache/browserify/12.0.1/package/package.json",
+		"/E/filmy/Mission.Impossible.Rogue.Nation.2015.1080p.WEB-DL.x264.AC3-JYK/Mission.Impossible.Rogue.Nation.2015.1080p.WEB-DL.x264.AC3-JYK.srt",
+		"/C/Program Files/Common Files/Autodesk Shared/AdLM/R5/ja-JP/Webdepot/NSA_RTAuthConfirmed.html",
+		"/C/Users/marcin/AppData/Local/Temp/fz3temp-1/settings 2.php",
+		"/C/Users/marcin/AppData/Local/Temp/fz3temp-1/settings.php",
+		"/C/Users/marcin/Desktop/marcin.direktpoint.pl/all/themes/global/global.info",
+		"/C/Users/marcin/Desktop/marcin.direktpoint.pl/all/themes/global/less/variable.less",
+		"/C/wamp/www/Drupal/bootstrap/bootstrap_0/gulpfile.js",
+		"/C/Users/marcin/Downloads/backbone-min.js",
+		"/C/wamp/www/ksostrovia/wp-config.php",
+		"/C/Users/marcin/Downloads/navbar-7.x-1.6/navbar/README.md",
+		"/C/Users/marcin/AppData/Local/Temp/fz3temp-1/bootstrap-child.info",
+		"/C/Users/marcin/AppData/Local/Temp/fz3temp-1/template.php",
+		"/C/Users/marcin/AppData/Local/Temp/fz3temp-1/theme-settings.php",
+		"/C/Users/marcin/AppData/Local/Temp/fz3temp-1/style.css",
+		"/C/Users/marcin/Downloads/modernizr-min.js",
+		"/C/Users/marcin/Downloads/bootstrap-7.x-3.1/bootstrap/bootstrap.info",
+		"/C/Users/marcin/AppData/Local/Temp/fz3temp-1/cdn.starterkit",
+		"/C/Users/marcin/Downloads/modernizr.js",
+		"/C/Users/marcin/Downloads/underscore-min.js",
+		"/C/wamp/www/Drupal/underscore-min.js",
+		"/C/Users/marcin/Downloads/backbone (1).js",
+		"/C/Users/marcin/Downloads/modernizr-custom (1).js",
+		"/C/Users/marcin/Downloads/modernizr/modernizr-min.js",
+		"/C/Users/marcin/Downloads/modernizr/modernizr-custom.js",
+		"/C/wamp/www/Drupal/sites/default/settings.php",
+		"/C/Users/marcin/Downloads/drupaltest_db.sql",
+		"/C/Users/marcin/AppData/Local/Temp/fz3temp-1/.htaccess",
+		"/C/wamp/www/Drupal/includes/lock.inc",
+		"/C/Users/marcin/AppData/Local/Temp/fz3temp-1/default.settings.php",
+		"/C/wamp/apps/phpmyadmin4.1.14/config.inc.php",
+		"/C/wamp/www/Drupal/sites/all/themes/ks_ostrovia/sass/styles.scss",
+		"/C/wamp/www/Drupal/sites/all/themes/ks_ostrovia/sass/screen.scss",
+		"/C/wamp/www/Drupal/sites/all/themes/ks_ostrovia/package.json",
+		"/C/wamp/www/Drupal/sites/all/themes/ks_ostrovia/templates/page.tpl.php",
+		"/C/wamp/www/Drupal/sites/all/themes/ks_ostrovia/css/styles.css",
+		"/C/wamp/www/Drupal/sites/all/themes/ks_ostrovia/Gruntfile.js",
+		"/C/wamp/www/Drupal/sites/all/modules/custom/approval.info",
+		"/C/wamp/www/Drupal/sites/all/modules/custom/approval.module",
+		"/C/wamp/www/Drupal/sites/all/themes/ks_ostrovia/templates/html.tpl.php",
+		"/C/Users/marcin/Desktop/compass-demo/sass/styles.scss",
+		"/C/Users/marcin/Desktop/compass-demo/stylesheets/screen.css",
+		"/C/Users/marcin/Desktop/compass-demo/assets/compass/sass/style.scss",
+		"/C/Users/marcin/Desktop/compass-demo/assets/compass/config.rb",
+		"/C/Users/marcin/AppData/Roaming/Sublime Text 3/Packages/Package Syncing/Package Syncing.sublime-settings",
+		"/C/wamp/www/Drupal/sites/all/themes/ks_ostrovia/ks_ostrovia.info",
+		"/C/wamp/www/Drupal/sites/all/modules/admin_menu/admin_menu.css",
+		"/C/Users/marcin/AppData/Roaming/Sublime Text 3/Packages/JSCS-Formatter/JSCS-Formatter.sublime-settings",
+		"/E/PluralSight JavaScript Build Automation With Gulp.js/PluralSight JavaScript Build Automation With Gulp.js/pluralsight-gulp/src/client/app/customers/customers.controller.js",
+		"/E/Strony_www_GKI/belford_lp/index.html",
+		"/C/Users/marcin/AppData/Roaming/Sublime Text 3/Packages/User/Distraction Free.sublime-settings",
+		"/C/Users/marcin/vagrant/lobo/application/modules/wwwpl/views/scripts/branze-kontenery-i-osprzet/index.phtml",
+		"/C/Users/marcin/vagrant/lobo/application/modules/wwwpl/views/scripts/branze-skup-zlomu/index.phtml",
+		"/C/Users/marcin/vagrant/lobo/sftp-config.json",
+		"/C/Users/marcin/vagrant/lobo/application/modules/wwwpl/views/scripts/branze-zlomowanie-pojazdow/index.phtml",
+		"/C/Users/marcin/vagrant/lobo/application/modules/wwwpl/views/scripts/o-nas/index.phtml",
+		"/C/Users/marcin/vagrant/lobo/test.html",
+		"/C/Users/marcin/vagrant/lobo/public/css/pl/font-awesome.min.css",
+		"/C/Users/marcin/vagrant/lobo/public/css-2/font-awesome.min.css",
+		"/C/Users/marcin/vagrant/lobo/application/modules/wwwpl/views/scripts/index/index.phtml",
+		"/C/Users/marcin/AppData/Local/Temp/scp55352/home/mgromek/lobo/application/modules/wwwpl/views/scripts/pressroom/index.phtml",
+		"/C/Users/marcin/AppData/Local/Temp/scp54147/home/mgromek/lobo/application/modules/www/views/scripts/pressroom-article/index.phtml"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 157.0,
+		"where_history":
+		[
+			"C:\\Users\\marcin\\Downloads\\vccw-2.19.0"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"vccw",
+			"vccw.dev",
+			"name",
+			"footer_icons",
+			"loc",
+			"database",
+			"ksostrovia",
+			"*",
+			"*   ",
+			"*",
+			"ul",
+			"gulp",
+			"buttons",
+			"with",
+			"* ",
+			"print render($content['field_lead_image']);",
+			"?>",
+			"<?php ",
+			"drupaltest_db",
+			" *",
+			"marcin.direktpoint.pl/Drupal",
+			"localhost",
+			"status",
+			"weight",
+			"region",
+			"TRUE",
+			"status",
+			"info",
+			"<div class=\"content-right col-xs-4\">",
+			"div class=\"content-right col-xs-4\">\n                                               <strong>Złom stalowy</strong><br>Pod tą nazwą kryją się metalowe przedmioty, przeznaczone do wykorzystania w procesie recyklingu. Do złomu zalicza się: metalowe odpady produkcyjne, wyroby metalowe nie nadające się do naprawy, elementy konstrukcji, pochodzące z rozbiórki, odpady komunalne z metalu, wyeksploatowane samochody (pozbawione elementów niemetalicznych), maszyny, urządzenia i ich części, uszkodzone mechanicznie konstrukcje stalowe.\n                                          </div>",
+			"@media",
+			"mailto:lobo@lobo.com.pl",
+			"<a hr",
+			"href=\"#\"",
+			"=\"#\" ",
+			"<a c",
+			"xs-3",
+			"xs",
+			"xs-12",
+			"xs",
+			"12",
+			"footer",
+			"@media",
+			"xs-3",
+			"@media"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"ksostrovia.pl",
+			"marcin.direktpoint.pl",
+			"127.0.0.1",
+			"marcin.direktpoint.pl"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "site.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1668,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								187,
+								187
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/YAML/YAML.sublime-syntax"
+						},
+						"translation.x": -0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "www/wordpress/wp-config.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1774,
+						"regions":
+						{
+							"TagLint":
+							{
+								"flags": 2356,
+								"icon": "dot",
+								"regions":
+								[
+									[
+										1002,
+										1003
+									]
+								],
+								"scope": "variable.parameter"
+							}
+						},
+						"selection":
+						[
+							[
+								391,
+								391
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"bh_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content"
+							],
+							"incomplete_sync": null,
+							"is_xml": false,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 397,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										123,
+										131
+									],
+									[
+										301,
+										309
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								60,
+								60
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content"
+							],
+							"default_dir": "C:\\Users\\marcin\\Downloads\\vccw-2.19.0",
+							"detect_indentation": false,
+							"incomplete_sync": null,
+							"line_numbers": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ 	].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 116.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 202.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 122.0
+	},
+	"pinned_build_system": "",
+	"project": "vagrant.sublime-project",
+	"replace":
+	{
+		"height": 106.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"_var",
+				"sites\\all\\themes\\global\\scss\\base\\_variables.scss"
+			],
+			[
+				"co",
+				"sftp-config.json"
+			],
+			[
+				"json",
+				"sftp-config.json"
+			],
+			[
+				"globa",
+				"sites\\all\\themes\\global\\global.info"
+			],
+			[
+				"onasinde",
+				"application\\modules\\wwwpl\\views\\scripts\\o-nas\\index.phtml"
+			],
+			[
+				"skup-zlo",
+				"application\\modules\\wwwpl\\views\\scripts\\branze-skup-zlomu\\index.phtml"
+			],
+			[
+				"awesom",
+				"public\\css\\pl\\font-awesome.min.css"
+			],
+			[
+				"awes",
+				"public\\css-2\\font-awesome.min.css"
+			],
+			[
+				"kontenerind",
+				"application\\modules\\wwwpl\\views\\scripts\\branze-kontenery-i-osprzet\\index.phtml"
+			],
+			[
+				"zlomowani",
+				"application\\modules\\wwwpl\\views\\scripts\\branze-zlomowanie-pojazdow\\index.phtml"
+			],
+			[
+				"custo",
+				"public\\css\\pl\\custom.css"
+			],
+			[
+				"easy",
+				"public\\js\\pl\\easySlider1.7.js"
+			],
+			[
+				"o-nasind",
+				"application\\modules\\wwwpl\\views\\scripts\\o-nas\\index.phtml"
+			],
+			[
+				"indexinde",
+				"application\\modules\\wwwpl\\views\\scripts\\index\\index.phtml"
+			],
+			[
+				"konta",
+				"application\\modules\\wwwpl\\views\\scripts\\kontakt\\index.phtml"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 625.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\wamp\\www\\Drupal\\localhost_drupal.sublime-workspace"
+			]
+		],
+		"width": 475.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 431.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
