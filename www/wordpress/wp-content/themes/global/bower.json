@@ -1,0 +1,25 @@
+{
+  "name": "dev packages",
+  "authors": [
+    "n"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "ksostrovia"
+  ],
+  "license": "MIT",
+  "homepage": "ksostrovia.dev",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.1"
+  }
+}
