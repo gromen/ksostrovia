@@ -5,7 +5,8 @@
  */
 
 // Core variables and mixins
-@import "bootstrap/_variables";
+@import "bootstrap/variables";
+@import "variables";
 @import "bootstrap/mixins";
 
 // Reset and dependencies
@@ -58,6 +59,10 @@
 .site-navigation {
   > .container-fluid {
     margin: 0 -15px;
+    background: $green;
+    height: 50px;
+    top: 50px;
+    position: relative;
   }
 
   .navbar {
@@ -65,8 +70,18 @@
     border-radius: 0;
     background-color: $green;
 
+    #main-menu {
+      left: 118px;
+      position: relative;
+    }
+
     .navbar-brand {
       padding: 0 15px;
+
+      #logo {
+        position: absolute;
+        bottom: 0;
+      }
     }
 
     .navbar-nav {

@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"wp",
+				"wp_nav_menu"
+			],
+			[
 				"render",
 				"render($content['field_example"
 			],
@@ -36,29 +40,11 @@
 	"buffers":
 	[
 		{
-			"file": "site.yml",
+			"file": "ksostrovia.dev.sublime-project",
 			"settings":
 			{
-				"buffer_size": 1668,
+				"buffer_size": 45,
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "www/wordpress/wp-config.php",
-			"settings":
-			{
-				"buffer_size": 1774,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "Searching 1760 files for \"vccw.dev\"\n\nC:\\Users\\marcin\\Downloads\\vccw-2.19.0\\Movefile:\n    1  local:\n    2:   vhost: \"http://vccw.dev\"\n    3    wordpress_path: \"/var/www/wordpress\"\n    4  \n\nC:\\Users\\marcin\\Downloads\\vccw-2.19.0\\provision\\default.yml:\n   17  # Network Settings\n   18  #\n   19: hostname: vccw.dev\n   20  ip: 192.168.33.10\n   21  sync_folder: 'www/wordpress'\n\n2 matches across 2 files\n",
-			"settings":
-			{
-				"buffer_size": 397,
-				"line_ending": "Windows",
-				"name": "Find Results",
-				"scratch": true
 			}
 		}
 	],
@@ -90,20 +76,36 @@
 	"command_palette":
 	{
 		"height": 368.0,
-		"last_filter": "remo",
+		"last_filter": "pci",
 		"selected_items":
 		[
+			[
+				"pci",
+				"Package Control: Install Package"
+			],
+			[
+				"packasyn",
+				"PackageSync: Sync Online - Push Settings to Online Sync Folder"
+			],
 			[
 				"remo",
 				"Package Control: Remove Package"
 			],
 			[
-				"packsyn",
-				"PackageSync: Sync Online - Push Settings to Online Sync Folder"
+				"remove",
+				"Package Control: Remove Package"
 			],
 			[
-				"pci",
-				"Package Control: Install Package"
+				"gitq",
+				"Git: Quick Status"
+			],
+			[
+				"gitstat",
+				"Git: Status"
+			],
+			[
+				"packsyn",
+				"PackageSync: Sync Online - Push Settings to Online Sync Folder"
 			],
 			[
 				"php",
@@ -163,21 +165,37 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/marcin/Downloads/vccw-2.19.0",
-		"/C/Users/marcin/Downloads/vccw-2.19.0/www",
-		"/C/Users/marcin/Downloads/vccw-2.19.0/www/wordpress"
+		"/C/Users/marcin/Documents/Websites/Vagrant www/ksostrovia.dev",
+		"/C/Users/marcin/Documents/Websites/Vagrant www/ksostrovia.dev/www"
 	],
 	"file_history":
 	[
-		"/C/Users/marcin/Downloads/vccw-2.19.0/Movefile",
+		"/C/Users/marcin/Documents/Websites/Vagrant www/ksostrovia.dev/www/wordpress/wp-content/themes/global/assets/sass/_variables.scss",
+		"/C/Users/marcin/Documents/Websites/Vagrant www/ksostrovia.dev/www/wordpress/wp-content/themes/global/assets/sass/bootstrap/_variables.scss",
+		"/C/Users/marcin/Documents/Websites/Vagrant www/ksostrovia.dev/www/wordpress/wp-content/themes/global/.bowerrc",
+		"/C/Users/marcin/Documents/Websites/Vagrant www/ksostrovia.dev/www/wordpress/wp-content/themes/global/assets/sass/_bootstrap.scss",
+		"/C/Users/marcin/Documents/Websites/Vagrant www/ksostrovia.dev/www/wordpress/wp-content/themes/global/header.php",
+		"/C/Users/marcin/Documents/Websites/Vagrant www/ksostrovia.dev/www/wordpress/.gitignore",
+		"/C/Users/marcin/Documents/Websites/Vagrant www/ksostrovia.dev/www/wordpress/wp-content/themes/global/gulpfile.js",
+		"/C/Users/marcin/Sites/devdesktop/ksostrovia/sites/all/themes/radix/kits/default/config.json",
+		"/C/Users/marcin/Documents/Websites/Vagrant www/ksostrovia.dev/www/wordpress/wp-content/themes/global/assets/sass/style.scss",
+		"/C/Users/marcin/Documents/Websites/Vagrant www/ksostrovia.dev/www/wordpress/wp-content/themes/global/inc/wp_bootstrap_navwalker.php",
+		"/C/Users/marcin/AppData/Roaming/Sublime Text 3/Packages/PackageSync/PackageSync.sublime-settings",
+		"/C/Users/marcin/AppData/Roaming/Sublime Text 3/Packages/User/PackageSync.sublime-settings",
+		"/C/Users/marcin/AppData/Roaming/Sublime Text 3/Packages/User/SublimeGit.sublime-settings",
+		"/C/Users/marcin/Documents/Websites/Vagrant www/ksostrovia.dev/www/wordpress/wp-content/themes/global/functions.php",
+		"/C/Users/marcin/Documents/Websites/Vagrant www/ksostrovia.dev/www/wordpress/wp-content/themes/global/package.json",
+		"/C/Users/marcin/AppData/Roaming/Sublime Text 3/Packages/SublimeGit/SublimeGit.sublime-settings",
+		"/C/Users/marcin/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/marcin/Documents/Websites/Vagrant www/ksostrovia.dev/www/wordpress/wp-content/themes/global/bower.json",
 		"/C/Users/marcin/Downloads/vccw-2.19.0/www/wordpress/.gitignore",
 		"/C/Users/marcin/Downloads/vccw-2.19.0/Vagrantfile",
+		"/C/Users/marcin/Downloads/vccw-2.19.0/Movefile",
 		"/C/Users/marcin/Sites/devdesktop/ksostrovia/sites/all/themes/global/templates/system/html.tpl.php",
 		"/C/Users/marcin/Sites/devdesktop/ksostrovia/sites/all/themes/global/config.json",
 		"/C/Users/marcin/Sites/devdesktop/ksostrovia/sites/all/themes/global/gulpfile.js",
 		"/C/Users/marcin/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
 		"/C/Users/marcin/AppData/Local/Temp/scp03884/sites/all/themes/global/templates/page-cart.tpl.php",
-		"/C/Users/marcin/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/C/Users/marcin/Sites/devDesktop/ksostrovia/.gitignore",
 		"/C/Users/marcin/Downloads/Superfish-for-Drupal-1.x/Superfish-for-Drupal-1.x/README",
 		"/C/Users/marcin/Sites/devDesktop/ksostrovia/sites/ksostrovia.dd/settings.php",
@@ -279,24 +297,7 @@
 		"/C/Users/marcin/Desktop/compass-demo/stylesheets/screen.css",
 		"/C/Users/marcin/Desktop/compass-demo/assets/compass/sass/style.scss",
 		"/C/Users/marcin/Desktop/compass-demo/assets/compass/config.rb",
-		"/C/Users/marcin/AppData/Roaming/Sublime Text 3/Packages/Package Syncing/Package Syncing.sublime-settings",
-		"/C/wamp/www/Drupal/sites/all/themes/ks_ostrovia/ks_ostrovia.info",
-		"/C/wamp/www/Drupal/sites/all/modules/admin_menu/admin_menu.css",
-		"/C/Users/marcin/AppData/Roaming/Sublime Text 3/Packages/JSCS-Formatter/JSCS-Formatter.sublime-settings",
-		"/E/PluralSight JavaScript Build Automation With Gulp.js/PluralSight JavaScript Build Automation With Gulp.js/pluralsight-gulp/src/client/app/customers/customers.controller.js",
-		"/E/Strony_www_GKI/belford_lp/index.html",
-		"/C/Users/marcin/AppData/Roaming/Sublime Text 3/Packages/User/Distraction Free.sublime-settings",
-		"/C/Users/marcin/vagrant/lobo/application/modules/wwwpl/views/scripts/branze-kontenery-i-osprzet/index.phtml",
-		"/C/Users/marcin/vagrant/lobo/application/modules/wwwpl/views/scripts/branze-skup-zlomu/index.phtml",
-		"/C/Users/marcin/vagrant/lobo/sftp-config.json",
-		"/C/Users/marcin/vagrant/lobo/application/modules/wwwpl/views/scripts/branze-zlomowanie-pojazdow/index.phtml",
-		"/C/Users/marcin/vagrant/lobo/application/modules/wwwpl/views/scripts/o-nas/index.phtml",
-		"/C/Users/marcin/vagrant/lobo/test.html",
-		"/C/Users/marcin/vagrant/lobo/public/css/pl/font-awesome.min.css",
-		"/C/Users/marcin/vagrant/lobo/public/css-2/font-awesome.min.css",
-		"/C/Users/marcin/vagrant/lobo/application/modules/wwwpl/views/scripts/index/index.phtml",
-		"/C/Users/marcin/AppData/Local/Temp/scp55352/home/mgromek/lobo/application/modules/wwwpl/views/scripts/pressroom/index.phtml",
-		"/C/Users/marcin/AppData/Local/Temp/scp54147/home/mgromek/lobo/application/modules/www/views/scripts/pressroom-article/index.phtml"
+		"/C/Users/marcin/AppData/Roaming/Sublime Text 3/Packages/Package Syncing/Package Syncing.sublime-settings"
 	],
 	"find":
 	{
@@ -307,7 +308,8 @@
 		"height": 157.0,
 		"where_history":
 		[
-			"C:\\Users\\marcin\\Downloads\\vccw-2.19.0"
+			"C:\\Users\\marcin\\Documents\\Websites\\Vagrant www\\ksostrovia.dev\\www\\wordpress",
+			"C:\\Users\\marcin\\Sites\\devdesktop\\ksostrovia\\sites\\all\\themes\\radix\\kits\\default"
 		]
 	},
 	"find_state":
@@ -315,8 +317,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"vccw",
-			"vccw.dev",
+			"link-active",
+			"active",
+			"jquery.js",
+			"jquery",
+			"         ",
+			"nav",
+			"browserSyncProxy",
 			"name",
 			"footer_icons",
 			"loc",
@@ -367,7 +374,6 @@
 		"regex": false,
 		"replace_history":
 		[
-			"ksostrovia.pl",
 			"marcin.direktpoint.pl",
 			"127.0.0.1",
 			"marcin.direktpoint.pl"
@@ -381,24 +387,24 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "site.yml",
-					"semi_transient": false,
+					"file": "ksostrovia.dev.sublime-project",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 1668,
+						"buffer_size": 45,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								187,
-								187
+								42,
+								42
 							]
 						],
 						"settings":
@@ -406,56 +412,56 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
@@ -465,224 +471,7 @@
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/YAML/YAML.sublime-syntax"
-						},
-						"translation.x": -0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "www/wordpress/wp-config.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1774,
-						"regions":
-						{
-							"TagLint":
-							{
-								"flags": 2356,
-								"icon": "dot",
-								"regions":
-								[
-									[
-										1002,
-										1003
-									]
-								],
-								"scope": "variable.parameter"
-							}
-						},
-						"selection":
-						[
-							[
-								391,
-								391
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"auto_complete": false,
-							"bh_regions":
-							[
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content"
-							],
-							"incomplete_sync": null,
-							"is_xml": false,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 397,
-						"regions":
-						{
-							"match":
-							{
-								"flags": 112,
-								"regions":
-								[
-									[
-										123,
-										131
-									],
-									[
-										301,
-										309
-									]
-								],
-								"scope": ""
-							}
-						},
-						"selection":
-						[
-							[
-								60,
-								60
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content"
-							],
-							"default_dir": "C:\\Users\\marcin\\Downloads\\vccw-2.19.0",
-							"detect_indentation": false,
-							"incomplete_sync": null,
-							"line_numbers": false,
-							"output_tag": 1,
-							"result_base_dir": "",
-							"result_file_regex": "^([^ 	].*):$",
-							"result_line_regex": "^ +([0-9]+):",
-							"scroll_past_end": true,
-							"syntax": "Packages/Default/Find Results.hidden-tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -742,10 +531,10 @@
 		"height": 122.0
 	},
 	"pinned_build_system": "",
-	"project": "vagrant.sublime-project",
+	"project": "ksostrovia.dev.sublime-project",
 	"replace":
 	{
-		"height": 106.0
+		"height": 50.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -754,6 +543,22 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"varia",
+				"ksostrovia.dev\\www\\wordpress\\wp-content\\themes\\global\\assets\\sass\\bootstrap\\_variables.scss"
+			],
+			[
+				"styles",
+				"ksostrovia.dev\\www\\wordpress\\wp-content\\themes\\global\\assets\\sass\\style.scss"
+			],
+			[
+				"heade",
+				"ksostrovia.dev\\www\\wordpress\\wp-content\\themes\\global\\header.php"
+			],
+			[
+				"func",
+				"ksostrovia.dev\\www\\wordpress\\wp-content\\themes\\global\\functions.php"
+			],
 			[
 				"_var",
 				"sites\\all\\themes\\global\\scss\\base\\_variables.scss"
@@ -825,7 +630,7 @@
 		[
 			[
 				"",
-				"C:\\wamp\\www\\Drupal\\localhost_drupal.sublime-workspace"
+				"C:\\vagrant www\\www\\ksostrovia.dev.sublime-workspace"
 			]
 		],
 		"width": 475.0
@@ -847,7 +652,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 431.0,
+	"side_bar_width": 237.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

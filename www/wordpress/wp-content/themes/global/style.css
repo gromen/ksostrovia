@@ -238,8 +238,8 @@ th {
 
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot");
-  src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
+  src: url("../bootstrap/fontsglyphicons-halflings-regular.eot");
+  src: url("../bootstrap/fontsglyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../bootstrap/fontsglyphicons-halflings-regular.woff2") format("woff2"), url("../bootstrap/fontsglyphicons-halflings-regular.woff") format("woff"), url("../bootstrap/fontsglyphicons-halflings-regular.ttf") format("truetype"), url("../bootstrap/fontsglyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
 
 .glyphicon {
   position: relative;
@@ -3951,7 +3951,7 @@ tbody.collapse.in {
       color: #333;
       background-color: transparent; }
   .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-    color: #555;
+    color: #fff;
     background-color: #e7e7e7; }
   .navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus {
     color: #ccc;
@@ -3967,7 +3967,7 @@ tbody.collapse.in {
     border-color: #e7e7e7; }
   .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
     background-color: #e7e7e7;
-    color: #555; }
+    color: #fff; }
   @media (max-width: 767px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
       color: #777; }
@@ -3975,7 +3975,7 @@ tbody.collapse.in {
         color: #333;
         background-color: transparent; }
     .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-      color: #555;
+      color: #fff;
       background-color: #e7e7e7; }
     .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
       color: #ccc;
@@ -5818,13 +5818,23 @@ button.close {
     display: none !important; } }
 
 .site-navigation > .container-fluid {
-  margin: 0 -15px; }
+  margin: 0 -15px;
+  background: #00923f;
+  height: 50px;
+  top: 50px;
+  position: relative; }
 
 .site-navigation .navbar {
   border: 0;
   border-radius: 0;
   background-color: #00923f; }
+  .site-navigation .navbar #main-menu {
+    left: 118px;
+    position: relative; }
   .site-navigation .navbar .navbar-brand {
     padding: 0 15px; }
+    .site-navigation .navbar .navbar-brand #logo {
+      position: absolute;
+      bottom: 0; }
   .site-navigation .navbar .navbar-nav a {
     color: #fff; }

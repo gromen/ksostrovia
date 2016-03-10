@@ -6,7 +6,6 @@ $bootstrap-sass-asset-helper: false !default;
 //------------------------
 // KS OSTROVIA variables
 //------------------------
-$green: #00923f;
 
 //== Colors
 //
@@ -115,7 +114,7 @@ $headings-color: inherit !default;
 
 // [converter] If $bootstrap-sass-asset-helper if used, provide path relative to the assets load path.
 // [converter] This is because some asset helpers, such as Sprockets, do not work with file-relative paths.
-$icon-font-path: if($bootstrap-sass-asset-helper, "bootstrap/", "../fonts/bootstrap/") !default;
+$icon-font-path: if($bootstrap-sass-asset-helper, "bootstrap/fonts", "../bootstrap/fonts") !default;
 
 //** File name for all font files.
 $icon-font-name: "glyphicons-halflings-regular" !default;
@@ -434,7 +433,7 @@ $navbar-default-border: darken($navbar-default-bg, 6.5%) !default;
 $navbar-default-link-color: #777 !default;
 $navbar-default-link-hover-color: #333 !default;
 $navbar-default-link-hover-bg: transparent !default;
-$navbar-default-link-active-color: #555 !default;
+$navbar-default-link-active-color: #fff !default;
 $navbar-default-link-active-bg: darken($navbar-default-bg, 6.5%) !default;
 $navbar-default-link-disabled-color: #ccc !default;
 $navbar-default-link-disabled-bg: transparent !default;
