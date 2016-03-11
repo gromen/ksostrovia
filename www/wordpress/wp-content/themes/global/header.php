@@ -19,41 +19,45 @@
 		</head>
 		<body <?php body_class(); ?>>
 			<?php do_action( 'before' ); ?>
-			<nav class="site-navigation">
-				<?php // substitute the class "container-fluid" below if you want a wider content area ?>
-				<div class="container-fluid">
-					<div class="container">
-						<div class="row">
-							<div class="col-sm-12">
-								<div class="navbar navbar-default">
-									<div class="navbar-header">
-										<!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
-										<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-										<span class="sr-only"><?php _e('Toggle navigation','_tk') ?> </span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-										</button>
-										<!-- Your site title as branding in the menu -->
-										<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php bloginfo('template_directory')?>/assets/images/logo.png" id="logo"/></a>
+			<header class="header">
+				<nav class="header__nav">
+					<?php // substitute the class "container-fluid" below if you want a wider content area ?>
+					<div class="container-fluid">
+						<div class="container">
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="navbar navbar-default">
+										<div class="navbar-header">
+											<!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
+											<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+											<span class="sr-only"><?php _e('Toggle navigation','_tk') ?> </span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+											</button>
+											<!-- Your site title as branding in the menu -->
+											<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php bloginfo('template_directory')?>/assets/images/logo.png" id="logo"/></a>
+										</div>
+										<!-- The WordPress Menu goes here -->
+										<?php wp_nav_menu(
+											array(
+												'theme_location'	 	=> 'primary',
+												'depth'             => 2,
+												'container'         => 'div',
+												'container_class'   => 'collapse navbar-collapse',
+												'menu_class' 				=> 'nav navbar-nav',
+												'fallback_cb' 			=> 'wp_bootstrap_navwalker::fallback',
+												'menu_id'						=> 'main-menu',
+												'walker' 						=> new wp_bootstrap_navwalker()
+											)
+										); ?>
+										</div><!-- .navbar -->
 									</div>
-									<!-- The WordPress Menu goes here -->
-									<?php wp_nav_menu(
-										array(
-											'theme_location'	 	=> 'primary',
-											'depth'             => 2,
-											'container'         => 'div',
-											'container_class'   => 'collapse navbar-collapse',
-											'menu_class' 				=> 'nav navbar-nav',
-											'fallback_cb' 			=> 'wp_bootstrap_navwalker::fallback',
-											'menu_id'						=> 'main-menu',
-											'walker' 						=> new wp_bootstrap_navwalker()
-										)
-									); ?>
-									</div><!-- .navbar -->
 								</div>
-							</div>
-							</div><!-- .container --></div>						</nav><!-- .site-navigation -->
+								</div><!-- .container --></div>
+								</nav>
+							<div class="header__banner"><a href="#" target="_blank"><img src="<?php bloginfo('template_directory')?>/assets/images/BANER.jpg" class="header__banner-img"/></a></div>
+			</header><!-- .site-navigation -->
 							<div class="container">
 								<div id="page" class="site">
 									<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'global' ); ?></a>
