@@ -6,7 +6,8 @@
 
 // Core variables and mixins
 @import "bootstrap/variables";
-@import "variables";
+
+// @import "_variables.scss";
 @import "bootstrap/mixins";
 
 // Reset and dependencies
@@ -56,8 +57,38 @@
 @import "bootstrap/utilities";
 @import "bootstrap/responsive-utilities";
 
+// media (rwd) variables
+$width-lg: 1200px;
+$width-md: 992px;
+$width-sm: 768px;
+$width-xs: 480px;
+
+@mixin respond-end($media) {
+  //$screen-xs-min - Extra small screen / iphone pion
+  //$screen-sm-min - Small screen / tablet
+  //$screen-md-min - Medium screen / desktop
+  //$screen-lg-min - Large screen / wide desktop
+  @media (max-width: $media) {
+    @content;
+  }
+}
+
+body {
+  @include respond-end($screen-sm) {
+    margin-top: 0;
+  }
+
+
+  margin-top: 26px;
+}
+
 .site-navigation {
   > .container-fluid {
+    @include respond-end($screen-sm) {
+      top: 0;
+    }
+
+
     margin: 0 -15px;
     background: $green;
     height: 50px;
@@ -79,6 +110,12 @@
       padding: 0 15px;
 
       #logo {
+        @include respond-end($screen-sm) {
+          width: 50px;
+          padding: 5px;
+        }
+
+
         position: absolute;
         bottom: 0;
       }
@@ -88,6 +125,16 @@
       a {
         color: #fff;
       }
+
+      .active {
+        a {
+          color: $green;
+        }
+      }
     }
   }
+}
+
+.site {
+  margin-top: 60px;
 }
