@@ -75,6 +75,7 @@ body {
   }
 
 
+  font-family: 'Roboto', sans-serif;
   margin-top: 26px;
 }
 
@@ -101,10 +102,16 @@ body {
 
     #main-menu {
       position: relative;
+
+      .menu-item {
+        a {
+          text-transform: uppercase;
+        }
+      }
     }
 
     .navbar-brand {
-      padding: 0 15px;
+      padding: 0;
 
       #logo {
         @include respond-end($screen-sm) {

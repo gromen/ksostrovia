@@ -5818,6 +5818,7 @@ button.close {
     display: none !important; } }
 
 body {
+  font-family: 'Roboto', sans-serif;
   margin-top: 26px; }
   @media (max-width: 768px) {
     body {
@@ -5840,8 +5841,10 @@ body {
   background-color: #00923f; }
   .header__nav .navbar #main-menu {
     position: relative; }
+    .header__nav .navbar #main-menu .menu-item a {
+      text-transform: uppercase; }
   .header__nav .navbar .navbar-brand {
-    padding: 0 15px; }
+    padding: 0; }
     .header__nav .navbar .navbar-brand #logo {
       position: absolute;
       bottom: 0; }
