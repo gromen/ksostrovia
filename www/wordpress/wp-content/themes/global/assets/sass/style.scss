@@ -64,10 +64,6 @@ $width-sm: 768px;
 $width-xs: 480px;
 
 @mixin respond-end($media) {
-  //$screen-xs-min - Extra small screen / iphone pion
-  //$screen-sm-min - Small screen / tablet
-  //$screen-md-min - Medium screen / desktop
-  //$screen-lg-min - Large screen / wide desktop
   @media (max-width: $media) {
     @content;
   }
@@ -82,14 +78,16 @@ body {
   margin-top: 26px;
 }
 
-.site-navigation {
+//header section
+.header__nav {
   > .container-fluid {
     @include respond-end($screen-sm) {
       top: 0;
     }
 
 
-    margin: 0 -15px;
+    box-shadow: 0 8px 16px -6px #000;
+    margin: 0 0;
     background: $green;
     height: 50px;
     top: 50px;
@@ -102,7 +100,6 @@ body {
     background-color: $green;
 
     #main-menu {
-      left: 118px;
       position: relative;
     }
 
@@ -122,6 +119,8 @@ body {
     }
 
     .navbar-nav {
+      float: right;
+
       a {
         color: #fff;
       }
@@ -132,6 +131,15 @@ body {
         }
       }
     }
+  }
+}
+
+.header__banner {
+  margin: auto;
+  max-width: 100%;
+
+  .header__banner-img {
+    width: 100%;
   }
 }
 

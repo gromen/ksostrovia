@@ -5823,36 +5823,44 @@ body {
     body {
       margin-top: 0; } }
 
-.site-navigation > .container-fluid {
-  margin: 0 -15px;
+.header__nav > .container-fluid {
+  box-shadow: 0 8px 16px -6px #000;
+  margin: 0 0;
   background: #00923f;
   height: 50px;
   top: 50px;
   position: relative; }
   @media (max-width: 768px) {
-    .site-navigation > .container-fluid {
+    .header__nav > .container-fluid {
       top: 0; } }
 
-.site-navigation .navbar {
+.header__nav .navbar {
   border: 0;
   border-radius: 0;
   background-color: #00923f; }
-  .site-navigation .navbar #main-menu {
-    left: 118px;
+  .header__nav .navbar #main-menu {
     position: relative; }
-  .site-navigation .navbar .navbar-brand {
+  .header__nav .navbar .navbar-brand {
     padding: 0 15px; }
-    .site-navigation .navbar .navbar-brand #logo {
+    .header__nav .navbar .navbar-brand #logo {
       position: absolute;
       bottom: 0; }
       @media (max-width: 768px) {
-        .site-navigation .navbar .navbar-brand #logo {
+        .header__nav .navbar .navbar-brand #logo {
           width: 50px;
           padding: 5px; } }
-  .site-navigation .navbar .navbar-nav a {
-    color: #fff; }
-  .site-navigation .navbar .navbar-nav .active a {
-    color: #00923f; }
+  .header__nav .navbar .navbar-nav {
+    float: right; }
+    .header__nav .navbar .navbar-nav a {
+      color: #fff; }
+    .header__nav .navbar .navbar-nav .active a {
+      color: #00923f; }
+
+.header__banner {
+  margin: auto;
+  max-width: 100%; }
+  .header__banner .header__banner-img {
+    width: 100%; }
 
 .site {
   margin-top: 60px; }
