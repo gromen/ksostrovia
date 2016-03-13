@@ -40,7 +40,6 @@
 			) );
 		?>
 	</div><!-- .entry-content -->
-
 	<footer class="entry-footer">
 		<?php global_entry_footer(); ?>
 	</footer><!-- .entry-footer -->

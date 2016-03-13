@@ -11,7 +11,9 @@
      ?>
 
 <h3 class="news-post__title h3"><?php the_title(); ?></h3>
-<?php the_content(''); ?>
+<p class="news-post__published-date"><?php the_date(); ?></p>
+
+<?php the_content(); ?>
   <?php endwhile; // end of one post ?>
   <?php endif; //end of loop ?>
 </div>
