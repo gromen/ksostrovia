@@ -13,4 +13,5 @@ sitemap.xml.gz
 /wp-content/wp-cache-config.php
 /wp-content/themes/*/node_modules
 vagrant.sublime-project
+ksostrovia.dev.sublime-workspace
 

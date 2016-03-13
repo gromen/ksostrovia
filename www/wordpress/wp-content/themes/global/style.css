@@ -5859,6 +5859,10 @@ body {
     .header__nav .navbar .navbar-nav .active a {
       color: #00923f; }
 
+.blog_post img {
+  max-width: 100%;
+  height: auto; }
+
 .header__banner {
   margin: auto;
   max-width: 100%; }
@@ -5867,3 +5871,17 @@ body {
 
 .site {
   margin-top: 60px; }
+
+.footer {
+  background: #000; }
+  .footer .menu ul {
+    padding: 0;
+    margin: 0; }
+    .footer .menu ul li {
+      display: inline-block; }
+  .footer .menu a {
+    padding: 10px 30px 10px 0;
+    color: #fff;
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none; }
