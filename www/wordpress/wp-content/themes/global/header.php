@@ -57,7 +57,11 @@
 								</div>
 								</div><!-- .container --></div>
 								</nav>
-							<div class="header__banner"><a href="#" target="_blank"><img src="<?php bloginfo('template_directory')?>/assets/images/BANER.jpg" class="header__banner-img"/></a></div>
+								<!-- Front page banner -->
+								<?php if( is_front_page()): ?>
+									<div class="header__banner"><a href="#" target="_blank"><img src="<?php bloginfo('template_directory')?>/assets/images/BANER.jpg" class="header__banner-img"/></a></div>
+								<?php endif; ?>
+
 			</header><!-- .site-navigation -->
 							<div class="container">
 								<div id="page" class="site">
