@@ -38,7 +38,7 @@ function global_setup() {
 	*/
 	add_theme_support( 'post-thumbnails' );
 	//custom image sizes
-	add_image_size( 'img700x250', 700, 250, true );
+	add_image_size( 'img750x250', 750, 250, true );
 	add_image_size( 'img250x250', 250, 250, true );
 
 	add_filter( 'image_size_names_choose', 'custom_image_sizes_choose' );
@@ -82,7 +82,7 @@ add_action( 'after_setup_theme', 'global_setup' );
 //
 function custom_image_sizes_choose( $sizes ) {
     $custom_sizes = array(
-        'img700x250' => 'img700x250',
+        'img750x250' => 'img750x250',
         'img250x250' => 'img250x250'
 
     );
@@ -108,7 +108,7 @@ add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
  * @return int (Maybe) modified excerpt length.
  */
 function wpdocs_custom_excerpt_length( $length ) {
-    return 79;
+    return 65;
 }
 add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
 /**

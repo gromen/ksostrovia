@@ -84,4 +84,4 @@
 											</header><!-- #masthead -->
 											<div id="content" class="site-content">
 											<div class="row">
-											<div class="col-xs-12 col-md-7">
+											<div class="col-xs-12 col-md-8">

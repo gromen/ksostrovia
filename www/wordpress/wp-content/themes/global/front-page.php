@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<h2 class="h2">Aktualności</h2>
 <?php
   $count = 0;
   $my_query = "showposts=3"; $my_query = new WP_Query($my_query);
@@ -6,17 +7,21 @@
   $count++;
 ?>
     <!-- article post -->
-    <article class="news-post<?php if($count == 1): ?> first<?php endif; ?>">
-      <?php if ( has_post_thumbnail() && $count == 1 ) ://display image size 700x250px for first Post ?>
-          <figure class="news-post__image"> <?php the_post_thumbnail('img700x250'); ?></figure>
+    <article class="news-post clearfix<?php if($count == 1): ?> first<?php endif; ?>">
+      <div class="news-post__content">
+        <?php if ( has_post_thumbnail() && $count == 1 ) ://display image size 700x250px for first Post ?>
+            <figure class="news-post__image"> <?php the_post_thumbnail('img750x250'); ?></figure>
 
-      <?php else : //if is not first post, display 250x250px image size?>
-          <figure class="news-post__image"> <?php the_post_thumbnail('img250x250'); ?></figure>
-      <?php endif; ?>
+        <?php else : //if is not first post, display 250x250px image size?>
+            <figure class="news-post__image"> <?php the_post_thumbnail('img250x250'); ?></figure>
+        <?php endif; ?>
 
-      <h3 class="news-post__title h3"><?php the_title(); ?></h3>
-      <span class="news-post__published-date"><?php the_date(); ?></span>
-      <div class="news-post__content"><?php the_excerpt(); ?></div>
+        <div class="news-post__text-container">
+          <h3 class="news-post__title h3"><?php the_title(); ?></h3>
+          <span class="news-post__published-date"><?php the_date(); ?></span>
+          <div class="news-post__body"><?php the_excerpt(); ?></div>
+        </div>
+      </div>
     </article>
 
 
