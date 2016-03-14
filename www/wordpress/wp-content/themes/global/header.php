@@ -66,8 +66,7 @@
 			</header><!-- .site-navigation -->
 							<div class="container">
 								<div id="page" class="site">
-<!-- 									<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'global' ); ?></a>
- -->									<header id="masthead" class="site-header" role="banner">
+ 								<header id="masthead" class="site-header" role="banner">
 										<div class="site-branding">
 											<?php
 											if ( is_front_page() && is_home() ) : ?>
@@ -83,4 +82,6 @@
 											endif; ?>
 											</div><!-- .site-branding -->
 											</header><!-- #masthead -->
-											<div id="content" class="row site-content">
+											<div id="content" class="site-content">
+											<div class="row">
+											<div class="col-xs-12 col-md-7">

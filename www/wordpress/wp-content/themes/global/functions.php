@@ -43,14 +43,6 @@ function global_setup() {
 
 	add_filter( 'image_size_names_choose', 'custom_image_sizes_choose' );
 
-function custom_image_sizes_choose( $sizes ) {
-    $custom_sizes = array(
-        'img700x250' => 'img700x250',
-        'img250x250' => 'img250x250'
-
-    );
-    return array_merge( $sizes, $custom_sizes );
-}
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
@@ -87,6 +79,38 @@ function custom_image_sizes_choose( $sizes ) {
 }
 endif;
 add_action( 'after_setup_theme', 'global_setup' );
+//
+function custom_image_sizes_choose( $sizes ) {
+    $custom_sizes = array(
+        'img700x250' => 'img700x250',
+        'img250x250' => 'img250x250'
+
+    );
+    return array_merge( $sizes, $custom_sizes );
+}
+/**
+ * Filter the "read more" excerpt string link to the post.
+ *
+ * @param string $more "Read more" excerpt string.
+ * @return string (Maybe) modified "read more" excerpt string.
+ */
+function wpdocs_excerpt_more( $more ) {
+    return sprintf( '<a class="read-more" href="%1$s">%2$s</a>',
+        get_permalink( get_the_ID() ),
+        __( ' Czytaj więcej', 'textdomain' )
+    );
+}
+add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
+/**
+ * Filter the except length to 20 characters.
+ *
+ * @param int $length Excerpt length.
+ * @return int (Maybe) modified excerpt length.
+ */
+function wpdocs_custom_excerpt_length( $length ) {
+    return 79;
+}
+add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
 /**
 * Set the content width in pixels, based on the theme's design and stylesheet.
 *

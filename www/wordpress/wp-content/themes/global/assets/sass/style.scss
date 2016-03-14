@@ -141,10 +141,19 @@ body {
   }
 }
 
-.blog_post {
+.news-post {
   img {
     max-width: 100%;
     height: auto;
+  }
+
+  .news-post__content {
+    font-weight: 200;
+  }
+
+  .news-post__image {
+    float: left;
+    padding-right: 15px;
   }
 }
 

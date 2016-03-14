@@ -5859,9 +5859,16 @@ body {
     .header__nav .navbar .navbar-nav .active a {
       color: #00923f; }
 
-.blog_post img {
+.news-post img {
   max-width: 100%;
   height: auto; }
+
+.news-post .news-post__content {
+  font-weight: 200; }
+
+.news-post .news-post__image {
+  float: left;
+  padding-right: 15px; }
 
 .header__banner {
   margin: auto;
