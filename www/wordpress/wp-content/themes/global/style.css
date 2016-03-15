@@ -5881,6 +5881,8 @@ body {
       float: none; }
     .news-post.first .news-post__text-container {
       width: 100%; }
+  .news-post .news-post__text-container--full-width {
+    width: 100% !important; }
   .news-post .news-post__text-container {
     padding: 0 13px 0;
     float: left;

@@ -12,10 +12,14 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="entry-image">
 		<?php if ( has_post_thumbnail() ) : ?>
-           <figure class="entry-image__item"> <?php the_post_thumbnail('img700x250'); ?></figure>
-          <?php elseif( has_post_thumbnail() ) : ?>
-            <?php the_post_thumbnail('img250x250'); ?>
-          <?php endif; ?>
+
+	      <figure class="entry-image__item"> <?php the_post_thumbnail('img700x250'); ?></figure>
+
+	    <?php else :?>
+
+        <figure class="entry-image__item"> <?php the_post_thumbnail('img250x250'); ?></figure>
+
+    <?php endif; ?>
 	</div>
 	<header class="entry-header">
 		<?php

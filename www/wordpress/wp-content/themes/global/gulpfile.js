@@ -8,6 +8,7 @@ gulp.task('browser-sync', function() {
     //watch files
     var files = [
     './style.css',
+    './*/*.php',
     './*.php'
     ];
 

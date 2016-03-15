@@ -97,7 +97,7 @@ function custom_image_sizes_choose( $sizes ) {
 function wpdocs_excerpt_more( $more ) {
     return sprintf( '<a class="read-more" href="%1$s">%2$s</a>',
         get_permalink( get_the_ID() ),
-        __( ' Czytaj więcej', 'textdomain' )
+        __( 'czytaj więcej', 'textdomain' )
     );
 }
 add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
@@ -128,10 +128,20 @@ add_action( 'after_setup_theme', 'global_content_width', 0 );
 * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
 */
 function global_widgets_init() {
-	register_sidebar(
-		array(
+	register_sidebar(array(
 		'name'          => esc_html__( 'Sidebar', 'global' ),
 		'id'            => 'sidebar-1',
+		'class'					=> '',
+		'description'   => '',
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+		)
+	);
+		register_sidebar(array(
+		'name'          => esc_html__( 'League table widgets', 'global' ),
+		'id'            => 'sidebar-2',
 		'class'					=> '',
 		'description'   => '',
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
@@ -163,6 +173,8 @@ add_action( 'wp_enqueue_scripts', 'global_scripts' );
 * Implement the Custom Header feature.
 */
 require get_template_directory() . '/inc/wp_bootstrap_navwalker.php';
+
+require get_template_directory() . '/custom-post.php';
 /**
 * Implement the Custom Header feature.
 */

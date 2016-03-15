@@ -2,8 +2,9 @@
 <h2 class="h2">Aktualności</h2>
 <?php
   $count = 0;
-  $my_query = "showposts=3"; $my_query = new WP_Query($my_query);
-  if ($my_query->have_posts()) :  while ($my_query->have_posts()) : $my_query->the_post();
+  $args = array( 'post_type' => 'Aktualnosci', 'posts_per_page' => 3 );
+  $loop = new WP_Query( $args );
+  while ( $loop->have_posts() ) : $loop->the_post();
   $count++;
 ?>
     <!-- article post -->
@@ -16,7 +17,10 @@
             <figure class="news-post__image"> <?php the_post_thumbnail('img250x250'); ?></figure>
         <?php endif; ?>
 
-        <div class="news-post__text-container">
+
+          <div class="news-post__text-container <?php if(!has_post_thumbnail()) : ?>news-post__text-container--full-width<?php endif; ?>">
+
+
           <h3 class="news-post__title h3"><?php the_title(); ?></h3>
           <span class="news-post__published-date"><?php the_date(); ?></span>
           <div class="news-post__body"><?php the_excerpt(); ?></div>
@@ -26,9 +30,13 @@
 
 
   <?php endwhile; // end of one post ?>
-  <?php endif; //end of loop ?>
+
+<?php
+
+?>
+
 
   </div>
 
-
+<?php get_sidebar('league_table'); ?>
 <?php get_footer(); ?>
