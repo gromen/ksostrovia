@@ -4,3 +4,5 @@
 .vagrant
 Movefile
 vendor
+*.sublime-workspace
+

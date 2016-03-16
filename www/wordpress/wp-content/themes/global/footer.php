@@ -13,13 +13,14 @@
 </div><!-- #content -->
 </div><!-- #page -->
 </div><!-- .container -->
+  </div><!-- #container -->
 <footer class="footer" role="contentinfo">
   <div class="container">
     <div class="row">
       <div class="col-xs-12"><?php wp_nav_menu( array( 'theme_location' => 'secondary' ) ); ?></div>
-    </div></div>
-    </footer><!-- #colophon --><!-- #page -->
-    </div><!-- #container -->
-    <?php wp_footer(); ?>
-  </body>
+    </div>
+  </div>
+  </footer><!-- #colophon --><!-- #page -->
+  <?php wp_footer(); ?>
+</body>
 </html>

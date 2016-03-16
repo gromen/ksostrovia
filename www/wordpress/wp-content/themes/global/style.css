@@ -5881,24 +5881,30 @@ body {
       float: none; }
     .news-post.first .news-post__text-container {
       width: 100%; }
-  .news-post .news-post__text-container--full-width {
-    width: 100% !important; }
-  .news-post .news-post__text-container {
-    padding: 0 13px 0;
-    float: left;
-    width: 480px; }
-  .news-post .news-post__title {
-    margin-top: 12px;
-    margin-bottom: 0; }
-  .news-post .news-post__published-date {
-    color: #7f7f7f;
-    font-size: 12px; }
-  .news-post .news-post__body {
-    margin-top: 15px;
-    font-weight: 200; }
-  .news-post .news-post__image {
-    float: left;
-    padding-right: 15px; }
+
+.news-post__text-container--full-width {
+  width: 100% !important; }
+
+.news-post__text-container {
+  padding: 0 13px 0;
+  float: left;
+  width: 480px; }
+
+.news-post__title {
+  margin-top: 12px;
+  margin-bottom: 0; }
+
+.news-post__published-date {
+  color: #7f7f7f;
+  font-size: 12px; }
+
+.news-post__body {
+  margin-top: 15px;
+  font-weight: 200; }
+
+.news-post__image {
+  float: left;
+  padding-right: 15px; }
 
 .header__banner {
   margin: auto;
