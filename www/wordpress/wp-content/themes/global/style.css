@@ -5866,8 +5866,8 @@ body {
   border-bottom: 1px solid #ccc;
   margin-bottom: 25px; }
   .news-post .read-more {
-    margin-top: 12px;
-    display: block;
+    float: right;
+    margin-top: 30px;
     text-align: right;
     color: #000;
     font-weight: 600; }

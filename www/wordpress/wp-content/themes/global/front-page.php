@@ -23,7 +23,7 @@
 
           <h3 class="news-post__title h3"><?php the_title(); ?></h3>
           <span class="news-post__published-date"><?php the_date(); ?></span>
-          <div class="news-post__body"><?php the_excerpt(); ?></div>
+          <div class="news-post__body"><?php echo get_the_excerpt(); ?></div>
         </div>
       </div>
     </article>
