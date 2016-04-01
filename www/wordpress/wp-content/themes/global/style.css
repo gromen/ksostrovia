@@ -5900,7 +5900,8 @@ body {
 
 .news-post__body {
   margin-top: 15px;
-  font-weight: 200; }
+  font-weight: 200;
+  word-wrap: break-word; }
 
 .news-post__image {
   float: left;
