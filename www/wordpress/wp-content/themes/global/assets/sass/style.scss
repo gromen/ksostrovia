@@ -58,10 +58,10 @@
 @import "bootstrap/responsive-utilities";
 
 // media (rwd) variables
-$width-lg: 1200px;
-$width-md: 992px;
-$width-sm: 768px;
-$width-xs: 480px;
+$screen-lg: 1200px;
+$screen-md: 992px;
+$screen-sm: 768px;
+$screen-xs: 480px;
 
 @mixin respond-end($media) {
   @media (max-width: $media) {
@@ -154,6 +154,21 @@ body {
     text-align: right;
     color: #000;
     font-weight: 600;
+    @include respond-end($screen-md){
+      margin-top: 20px;
+    }
+    @include respond-end($screen-sm){
+      margin-top: 0;
+      margin-left: 10px;
+      float: none;
+
+    }
+    @include respond-end($screen-xs){
+      margin-left: 0;
+      display: block;
+        text-align: left;
+
+    }
   }
 
   img {
@@ -183,6 +198,15 @@ body {
   padding: 0 13px 0;
   float: left;
   width: 480px;
+
+  @include respond-end($screen-lg) {
+    width: 56%;
+  }
+
+
+  @include respond-end($screen-sm) {
+    width: 100%;
+  }
 }
 
 .news-post__title {
@@ -204,6 +228,12 @@ body {
 .news-post__image {
   float: left;
   padding-right: 15px;
+  img{
+    @include respond-end($screen-sm){
+      display: none;
+
+    }
+  }
 }
 
 .header__banner {

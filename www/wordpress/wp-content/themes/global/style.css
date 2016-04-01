@@ -5871,6 +5871,19 @@ body {
     text-align: right;
     color: #000;
     font-weight: 600; }
+    @media (max-width: 992px) {
+      .news-post .read-more {
+        margin-top: 20px; } }
+    @media (max-width: 768px) {
+      .news-post .read-more {
+        margin-top: 0;
+        margin-left: 10px;
+        float: none; } }
+    @media (max-width: 480px) {
+      .news-post .read-more {
+        margin-left: 0;
+        display: block;
+        text-align: left; } }
   .news-post img {
     max-width: 100%;
     height: auto; }
@@ -5889,6 +5902,12 @@ body {
   padding: 0 13px 0;
   float: left;
   width: 480px; }
+  @media (max-width: 1200px) {
+    .news-post__text-container {
+      width: 56%; } }
+  @media (max-width: 768px) {
+    .news-post__text-container {
+      width: 100%; } }
 
 .news-post__title {
   margin-top: 12px;
@@ -5906,6 +5925,9 @@ body {
 .news-post__image {
   float: left;
   padding-right: 15px; }
+  @media (max-width: 768px) {
+    .news-post__image img {
+      display: none; } }
 
 .header__banner {
   margin: auto;
