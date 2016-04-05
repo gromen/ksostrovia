@@ -77,6 +77,7 @@ body {
 
   font-family: 'Roboto', sans-serif;
   margin-top: 26px;
+  position: relative;
 }
 
 //header section
@@ -154,20 +155,23 @@ body {
     text-align: right;
     color: #000;
     font-weight: 600;
-    @include respond-end($screen-md){
+
+    @include respond-end($screen-md) {
       margin-top: 20px;
     }
-    @include respond-end($screen-sm){
+
+
+    @include respond-end($screen-sm) {
       margin-top: 0;
       margin-left: 10px;
       float: none;
-
     }
-    @include respond-end($screen-xs){
+
+
+    @include respond-end($screen-xs) {
       margin-left: 0;
       display: block;
-        text-align: left;
-
+      text-align: left;
     }
   }
 
@@ -228,10 +232,10 @@ body {
 .news-post__image {
   float: left;
   padding-right: 15px;
-  img{
-    @include respond-end($screen-sm){
-      display: none;
 
+  img {
+    @include respond-end($screen-sm) {
+      display: none;
     }
   }
 }
@@ -246,11 +250,14 @@ body {
 }
 
 .site {
-  margin-top: 60px;
+  margin: 60px 0 50px;
 }
 
 .footer {
   background: #000;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 
   .menu {
     ul {
