@@ -5,4 +5,5 @@
 Movefile
 vendor
 *.sublime-workspace
+*.sublime-project
 
