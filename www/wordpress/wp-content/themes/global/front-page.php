@@ -19,7 +19,7 @@
             </figure>
         <?php endif; ?>
 
-
+          <!-- if not first post,  -->
           <div class="news-post__text-container <?php if(!has_post_thumbnail()) : ?>news-post__text-container--full-width<?php endif; ?>">
 
 
