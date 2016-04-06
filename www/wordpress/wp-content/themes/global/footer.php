@@ -16,7 +16,7 @@
   </div><!-- #container -->
 <footer class="footer" role="contentinfo">
   <div class="container">
-    <div class="row">
+    <div class="">
       <div class="col-xs-12"><?php wp_nav_menu( array( 'theme_location' => 'secondary' ) ); ?></div>
     </div>
   </div>
