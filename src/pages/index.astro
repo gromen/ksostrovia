@@ -1,60 +1,63 @@
 ---
-import { fetchApi } from '../../lib/api'
 import Layout from '../layouts/Layout.astro'
 import '../styles/global.css'
 import { HTMLTag } from 'astro/types'
+import { queryPosts } from '../shared/queries'
 
-interface Post {
+export interface Post {
 	title: string
 	content: HTMLTag
 	slug: string
 }
-const costam = () => {
-	'trala'
-}
 
-const response = await fetchApi({
-	query: `
-	{
-		posts {
-			nodes {
-				content
-				date
-				title
-				excerpt
-				slug
-			}
-		}
-	}`
-})
-const posts = response?.posts?.nodes
+const posts = await queryPosts(3)
 ---
 
 <Layout title="Welcome to Astros">
-	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		{
-			posts?.map((post) => (
-				<div class="block">
-					<p>{post.title}</p>
-					<p>{post.slug}</p>
-					<p set:html={post.content} />
-				</div>
-			))
-		}
-	</main>
+	<h1>Welcome to <span class="text-gradient">KS OSTROVIA!!!</span></h1>
+	<div class="md:flex">
+		<article class="w-full md:w-3/5">
+			<picture>
+				<img
+					class="aspect-video w-full"
+					src={posts[0].featuredImage.node.mediaItemUrl}
+					alt={posts[0].featuredImage.node.altText}
+				/>
+			</picture>
+			<p>{posts[0].title}</p>
+			<p>{posts[0].slug}</p>
+			<p set:html={posts[0].content} />
+		</article>
+		<div class="flex w-full md:block md:w-2/5">
+			<article>
+				<picture class="flex justify-center">
+					<img
+						class="w-40"
+						src={posts[1].featuredImage.node.mediaItemUrl}
+						alt={posts[1].featuredImage.node.altText}
+					/>
+				</picture>
+				<p>{posts[1].title}</p>
+				<p>{posts[1].slug}</p>
+				<p set:html={posts[1].content} />
+			</article>
+			<article>
+				<picture class="flex justify-center">
+					<img
+						class="w-40"
+						src={posts[2].featuredImage.node.mediaItemUrl}
+						alt={posts[2].featuredImage.node.altText}
+					/>
+				</picture>
+				<p>{posts[2].title}</p>
+				<p>{posts[2].slug}</p>
+				<p set:html={posts[2].content} />
+			</article>
+		</div>
+	</div>
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
 	.astro-a {
 		position: absolute;
 		top: -32px;

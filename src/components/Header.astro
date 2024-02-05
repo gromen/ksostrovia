@@ -1,0 +1,43 @@
+---
+import { queryLogo, queryMenuItems, querySiteTitle } from '../shared/queries'
+
+const siteTitle = await querySiteTitle()
+const logo = await queryLogo()
+const menuItems = await queryMenuItems()
+---
+
+<header
+	class="md-pb-20 m-auto flex w-full items-center justify-between pb-10 md:w-[800px] lg:w-[1200px] lg:max-w-[calc(100%-2rem)]"
+>
+	<a href="/" class="flex items-center gap-5">
+		<img
+			class="max-w-[25%]"
+			src={logo.mediaItemUrl}
+			alt={logo.altText}
+			width={logo.mediaDetails.width}
+			height={logo.mediaDetails.height}
+		/>
+		<span class="hidden text-5xl font-bold md:block">{siteTitle}</span>
+	</a>
+	<nav>
+		<ul class="flex gap-5">
+			{
+				menuItems?.map(({ node }) => (
+					<li>
+						<a
+							href={
+								node.path === '/'
+									? node.path
+									: node?.connectedNode?.node?.__typename === 'Page'
+										? `/page${node.path}`
+										: `/post${node.path}`
+							}
+						>
+							{node.label}
+						</a>
+					</li>
+				))
+			}
+		</ul>
+	</nav>
+</header>

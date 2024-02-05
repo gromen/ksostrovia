@@ -1,0 +1,15 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import { queryPageBy } from '../../shared/queries'
+
+const { uri } = Astro.params
+const post = await queryPageBy(uri)
+---
+
+<Layout title={`${uri} | Ks Ostrovia`}>
+	<article class="text-">
+		<h1>{post?.title}</h1>
+		<time>Page {new Date(post?.date).toLocaleString()}</time>
+		<p set:html={post?.content} />
+	</article>
+</Layout>
