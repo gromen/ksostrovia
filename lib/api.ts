@@ -14,11 +14,12 @@ export async function fetchApi({ query, variables }: FetchApiParams) {
 		headers,
 		body: JSON.stringify({ query, variables })
 	})
-
+	console.log(response.ok)
 	if (!response.ok) {
 		console.error(response)
 		throw new Error('Failed to fetch API')
 	}
 	const { data } = await response.json()
+	console.log(data)
 	return data
 }

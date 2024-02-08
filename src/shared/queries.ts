@@ -35,18 +35,17 @@ export const querySiteTitle = async () => {
 	return generalSettings?.title
 }
 
-export type MenuItem = {}
 export const queryMenuItems = async () => {
 	const data = await fetchApi({
 		query: `{
-			menus(where: {location: PRIMARY}) {
+			menus {
 				nodes {
 					menuItems {
 						edges {
 							node {
 								path
-								label
 								uri
+								label
 								connectedNode {
 									node {
 										__typename
@@ -65,6 +64,7 @@ export const queryMenuItems = async () => {
 			}
 		}`
 	})
+
 	const { menus } = data
 	return menus?.nodes[0]?.menuItems?.edges
 }
