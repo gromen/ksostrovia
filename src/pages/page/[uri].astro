@@ -1,15 +1,18 @@
 ---
 import Layout from '../../layouts/Layout.astro'
 import { queryPageBy } from '../../shared/queries'
+import type { Post } from '../../generated/graphql'
 
 const { uri } = Astro.params
-const post = await queryPageBy(uri)
+if (!uri) return `<p>Provide uri</p>`
+
+const post = (await queryPageBy(uri)) as Post
 ---
 
 <Layout title={`${uri} | Ks Ostrovia`}>
-	<article class="text-">
+	<article>
 		<h1>{post?.title}</h1>
-		<time>Page {new Date(post?.date).toLocaleString()}</time>
+		<time>Page {post.date}</time>
 		<p set:html={post?.content} />
 	</article>
 </Layout>

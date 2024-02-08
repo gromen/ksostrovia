@@ -1,9 +1,10 @@
 ---
 import { queryLogo, queryMenuItems, querySiteTitle } from '../shared/queries'
+import type { MenuItem } from '../generated/graphql'
 
 const siteTitle = await querySiteTitle()
 const logo = await queryLogo()
-const menuItems = await queryMenuItems()
+const menuItems = (await queryMenuItems()) as MenuItem[]
 ---
 
 <header
@@ -17,13 +18,17 @@ const menuItems = await queryMenuItems()
 			width={logo.mediaDetails.width}
 			height={logo.mediaDetails.height}
 		/>
-		<span class="hidden text-5xl font-bold md:block">{siteTitle}</span>
+		<div class="hidden text-5xl font-bold md:block">
+			{siteTitle}
+			<span class="block text-2xl">Ostrów Mazowiecka</span>
+		</div>
 	</a>
 	<nav>
 		<ul class="flex gap-5">
 			{
-				menuItems?.map(({ node }) => (
+				menuItems?.map(({ node }: any) => (
 					<li>
+						{node}
 						<a
 							href={
 								node.path === '/'

@@ -1,15 +1,17 @@
 ---
 import Layout from '../../layouts/Layout.astro'
 import { queryPost } from '../../shared/queries'
+import type { Post } from '../../generated/graphql'
 
 const { slug } = Astro.params
-const post = await queryPost(slug)
+if (!slug) return `<p>Provide slug</p>`
+const post = (await queryPost(slug)) as Post
 ---
 
 <Layout title={`${slug} | Ks Ostrovia`}>
 	<article class="text-primary">
-		<h1>{post?.title}</h1>
-		<time>{new Date(post?.date).toLocaleString()}</time>
-		<p set:html={post?.content} />
+		<h1>{post.title}</h1>
+		<time>{post.date}</time>
+		<p set:html={post.content} />
 	</article>
 </Layout>

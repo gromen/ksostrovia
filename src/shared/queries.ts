@@ -35,6 +35,7 @@ export const querySiteTitle = async () => {
 	return generalSettings?.title
 }
 
+export type MenuItem = {}
 export const queryMenuItems = async () => {
 	const data = await fetchApi({
 		query: `{
@@ -83,7 +84,7 @@ export const queryPost = async (slug: string) => {
 	return post
 }
 
-export const queryPosts = async (first = null) => {
+export const queryPosts = async (first: number) => {
 	const data = await fetchApi({
 		query: `{
 			posts(first: ${first}) {
