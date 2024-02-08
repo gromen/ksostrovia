@@ -4,6 +4,7 @@ import '../styles/global.css'
 import { queryPosts } from '../shared/queries'
 
 const posts = (await queryPosts(3)) as any
+export const prerender = true // SSG enabled
 ---
 
 <Layout title="Welcome to Astros">
