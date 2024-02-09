@@ -1,14 +1,28 @@
 ---
 import { queryPosts } from '../shared/queries'
+import type { Post } from '../generated/graphql'
 
 const posts = (await queryPosts(3)) as any
-const postFirst = posts.filter((_, index) => index === 0)
-const postsLeft = posts.filter((_, index) => index > 0)
+const postFirst = posts.filter((_: unknown, index: number) => index === 0)
+const postsLeft = posts.filter((_: unknown, index: number) => index > 0)
+
+type PostProp = Post & {
+	featuredImage: {
+		node: {
+			mediaDetails: {
+				height: string
+				width: string
+			}
+			mediaItemUrl: string
+			altText: string
+		}
+	}
+}
 ---
 
 <div class="md:flex">
 	{
-		postFirst?.map((post, index) => (
+		postFirst?.map((post: PostProp) => (
 			<article class="w-full md:w-3/5">
 				<picture>
 					<img
@@ -28,7 +42,7 @@ const postsLeft = posts.filter((_, index) => index > 0)
 	{
 		postsLeft && (
 			<div class="flex md:block md:w-2/5">
-				{postsLeft.map((post) => (
+				{postsLeft.map((post: PostProp) => (
 					<article>
 						<picture class="flex justify-center">
 							<img
