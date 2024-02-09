@@ -8,6 +8,11 @@ export default defineConfig({
   devOptions: {
     tailwindConfig: './tailwind.config.js'
   },
+  vite: {
+    ssr: {
+      noExternal: 'cookie'
+    }
+  },
   output: "server",
   adapter: node({mode:'standalone'}),
   integrations: [tailwind()]
