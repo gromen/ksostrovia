@@ -9,6 +9,6 @@ export default defineConfig({
     tailwindConfig: './tailwind.config.js'
   },
   output: "server",
-  adapter: vercel(),
+  adapter: node({mode:'standalone'}),
   integrations: [tailwind()]
 });
