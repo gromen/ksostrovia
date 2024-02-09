@@ -1,0 +1,50 @@
+---
+import { queryPosts } from '../shared/queries'
+
+const posts = (await queryPosts(3)) as any
+const postFirst = posts.filter((_, index) => index === 0)
+const postsLeft = posts.filter((_, index) => index > 0)
+---
+
+<div class="md:flex">
+	{
+		postFirst?.map((post, index) => (
+			<article class="w-full md:w-3/5">
+				<picture>
+					<img
+						class="aspect-video w-full"
+						src={post.featuredImage.node.mediaItemUrl}
+						alt={post.featuredImage.node.altText}
+						width={post.featuredImage.node.mediaDetails.width}
+						height={post.featuredImage.node.mediaDetails.height}
+					/>
+				</picture>
+				<p>{post.title}</p>
+				<p>{post.slug}</p>
+				<p set:html={post.content} />
+			</article>
+		))
+	}
+	{
+		postsLeft && (
+			<div class="flex md:block md:w-2/5">
+				{postsLeft.map((post) => (
+					<article>
+						<picture class="flex justify-center">
+							<img
+								class="w-40"
+								src={post.featuredImage.node.mediaItemUrl}
+								alt={post.featuredImage.node.altText}
+								width={post.featuredImage.node.mediaDetails.width}
+								height={post.featuredImage.node.mediaDetails.height}
+							/>
+						</picture>
+						<p>{post.title}</p>
+						<p>{post.slug}</p>
+						<p set:html={post.content} />
+					</article>
+				))}
+			</div>
+		)
+	}
+</div>
