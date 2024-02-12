@@ -1,0 +1,21 @@
+---
+import { Breadcrumbs, BreadcrumbsItem } from 'accessible-astro-components'
+import Layout from './Layout.astro'
+
+interface Props {
+	title: string
+}
+
+const { title, breadcrumbs }: Props = Astro.props
+---
+
+<Layout title={title}>
+	<Breadcrumbs className="pb-5">
+		{
+			breadcrumbs?.map((item) => (
+				<BreadcrumbsItem href={item.url} label={item.label} currentPage={item.currentPage} />
+			))
+		}
+	</Breadcrumbs>
+	<slot />
+</Layout>
