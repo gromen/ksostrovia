@@ -1,0 +1,41 @@
+---
+/* eslint-disable */
+import { queryPosts, queryPostsAll } from '../shared/queries'
+import type { PostProp } from '../types'
+import BlogPost from './BlogPost.astro'
+type CountProp = number | undefined
+const { count }: { count?: CountProp } = Astro.props
+const isDisplayAllPosts = count === undefined
+const posts: PostProp[] = isDisplayAllPosts
+	? ((await queryPostsAll()) as any)
+	: ((await queryPosts(count as number)) as any)
+let postFirst, postsThumbnails
+
+if (!isDisplayAllPosts) {
+	postFirst = posts.filter((_: unknown, index: number) => index === 0)
+	postsThumbnails = posts.filter((_: unknown, index: number) => index > 0 && index < 3)
+}
+---
+
+<div class="md:flex">
+	{
+		isDisplayAllPosts ? (
+			<div class="flex flex-col">
+				{posts?.map((post: PostProp) => (
+					<BlogPost post={post} />
+				))}
+			</div>
+		) : (
+			<>
+				{postFirst?.map((post: PostProp) => (
+					<BlogPost post={post} />
+				))}
+				<div class="flex md:block md:w-2/5">
+					{postsThumbnails?.map((post: PostProp) => (
+						<BlogPost post={post} />
+					))}
+				</div>
+			</>
+		)
+	}
+</div>

@@ -115,6 +115,37 @@ export const queryPosts = async (first: number) => {
 	return posts?.nodes
 }
 
+export const queryPostsAll = async () => {
+	const data = await fetchApi({
+		query: `{
+			posts {
+				nodes {
+					content
+					date
+					title
+					excerpt
+					slug
+					featuredImage {
+						node {
+							mediaItemUrl
+							altText
+							mediaDetails {
+								height
+								width
+								sizes {
+									file
+								}
+							}
+						}
+					}
+				}
+			}
+		}`
+	})
+	const { posts } = data
+	return posts?.nodes
+}
+
 export const queryPageBy = async (uri: string) => {
 	const data = await fetchApi({
 		query: `{

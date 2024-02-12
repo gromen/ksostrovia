@@ -1,0 +1,24 @@
+---
+/* eslint-disable */
+import type { PostProp } from '../types'
+import type { Post } from '../generated/graphql'
+type BlogPostProp = {
+	post: PostProp
+}
+const { post } = Astro.props as BlogPostProp
+---
+
+<article class="w-full md:w-3/5">
+	<picture>
+		<img
+			class="aspect-video w-full"
+			src={post.featuredImage.node.mediaItemUrl}
+			alt={post.featuredImage.node.altText}
+			width={post.featuredImage.node.mediaDetails.width}
+			height={post.featuredImage.node.mediaDetails.height}
+		/>
+	</picture>
+	<p>{post.title}</p>
+	<p>{post.slug}</p>
+	<p set:html={post.content} />
+</article>
