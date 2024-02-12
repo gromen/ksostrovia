@@ -1,8 +1,8 @@
 ---
-/* eslint-disable */
 import { queryPosts, queryPostsAll } from '../shared/queries'
 import type { PostProp } from '../types'
 import BlogPost from './BlogPost.astro'
+import { routes } from '../shared/routes'
 type CountProp = number | undefined
 const { count }: { count?: CountProp } = Astro.props
 const isDisplayAllPosts = count === undefined
@@ -17,7 +17,7 @@ if (!isDisplayAllPosts) {
 }
 ---
 
-<div class="md:flex">
+<div class="gap-5 md:flex">
 	{
 		isDisplayAllPosts ? (
 			<div class="flex flex-col">
@@ -28,11 +28,20 @@ if (!isDisplayAllPosts) {
 		) : (
 			<>
 				{postFirst?.map((post: PostProp) => (
-					<BlogPost post={post} />
+					<div class="flex flex-col md:w-3/5">
+						<a href={routes.posts.single(post.slug)}>
+							<BlogPost post={post} />
+						</a>
+						<a href={routes.posts.all} class="block py-5 text-2xl underline md:ml-auto">
+							Zobacz wszystkie posty
+						</a>
+					</div>
 				))}
-				<div class="flex md:block md:w-2/5">
+				<div class="flex gap-3 md:block md:w-2/5">
 					{postsThumbnails?.map((post: PostProp) => (
-						<BlogPost post={post} />
+						<a href={routes.posts.single(post.slug)} class="w-1/2">
+							<BlogPost post={post} />
+						</a>
 					))}
 				</div>
 			</>

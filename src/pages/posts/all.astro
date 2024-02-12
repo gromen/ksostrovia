@@ -1,0 +1,11 @@
+---
+import { queryPostsAll } from '../../shared/queries'
+import type { Post } from '../../generated/graphql'
+import Layout from '../../layouts/Layout.astro'
+import BlogPost from '../../components/BlogPost.astro'
+const posts = (await queryPostsAll()) as Post[]
+---
+
+<Layout title="Wszystkie posty">
+	{posts?.map((post) => <BlogPost post={post} />)}
+</Layout>

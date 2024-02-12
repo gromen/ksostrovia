@@ -1,6 +1,7 @@
 ---
 import { queryLogo, queryMenuItems, querySiteTitle } from '../shared/queries'
 import type { MenuItem } from '../generated/graphql'
+import { routes } from '../shared/routes'
 
 const siteTitle = await querySiteTitle()
 const logo = await queryLogo()
@@ -10,7 +11,7 @@ const menuItems = (await queryMenuItems()) as MenuItem[]
 <header
 	class="md-pb-20 m-auto flex w-full items-center justify-between pb-10 md:w-[800px] lg:w-[1200px] lg:max-w-[calc(100%-2rem)]"
 >
-	<a href="/" class="flex items-center gap-5">
+	<a href={routes.home} class="flex items-center gap-5">
 		<img
 			class="max-w-[25%]"
 			src={logo.mediaItemUrl}

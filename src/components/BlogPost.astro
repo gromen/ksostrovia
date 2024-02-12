@@ -1,14 +1,13 @@
 ---
 /* eslint-disable */
 import type { PostProp } from '../types'
-import type { Post } from '../generated/graphql'
 type BlogPostProp = {
 	post: PostProp
 }
 const { post } = Astro.props as BlogPostProp
 ---
 
-<article class="w-full md:w-3/5">
+<article class="w-full">
 	<picture>
 		<img
 			class="aspect-video w-full"
