@@ -1,17 +1,21 @@
 ---
-import Layout from '../../layouts/Layout.astro'
 import { queryPost } from '../../shared/queries'
 import type { Post } from '../../generated/graphql'
+import LayoutPage from '../../layouts/LayoutPage.astro'
 
 const { slug } = Astro.params
 if (!slug) return `<p>Provide slug</p>`
 const post = (await queryPost(slug)) as Post
+const breadcrumbs = [
+	{ url: '/', label: 'Home' },
+	{ url: `/${slug}`, label: slug?.split('-').join(' '), currentPage: true }
+]
 ---
 
-<Layout title={`${slug} | Ks Ostrovia`}>
+<LayoutPage title={`${slug} | Ks Ostrovia`} breadcrumbs={breadcrumbs}>
 	<article class="text-primary">
 		<h1>{post.title}</h1>
 		<time>{post.date}</time>
 		<p set:html={post.content} />
 	</article>
-</Layout>
+</LayoutPage>
