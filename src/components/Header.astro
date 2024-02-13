@@ -2,6 +2,7 @@
 import { queryLogo, queryMenuItems, querySiteTitle } from '../shared/queries'
 import type { MenuItem } from '../generated/graphql'
 import { routes } from '../shared/routes'
+import MenuItems from './Menu/MenuItems.astro'
 
 const siteTitle = await querySiteTitle()
 const logo = await queryLogo()
@@ -24,25 +25,10 @@ const menuItems = (await queryMenuItems()) as MenuItem[]
 			<span class="block text-2xl">Ostrów Mazowiecka</span>
 		</div>
 	</a>
-	<nav>
-		<ul class="flex gap-5">
-			{
-				menuItems?.map(({ node }: any) => (
-					<li>
-						<a
-							href={
-								node.path === '/'
-									? node.path
-									: node?.connectedNode?.node?.__typename === 'Page'
-										? `/page${node.path}`
-										: `/post${node.path}`
-							}
-						>
-							{node.label}
-						</a>
-					</li>
-				))
-			}
-		</ul>
-	</nav>
+	<!--<div class="space-y-2">-->
+	<!--	<span class="block h-0.5 w-5 bg-primary-1"></span>-->
+	<!--	<span class="block h-0.5 w-8 bg-primary-1"></span>-->
+	<!--	<span class="block h-0.5 w-8 bg-primary-1"></span>-->
+	<!--</div>-->
+	<MenuItems items={menuItems} />
 </header>

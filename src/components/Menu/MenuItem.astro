@@ -1,0 +1,22 @@
+---
+import type { MenuItemLinkable } from '../../generated/graphql'
+const { item } = Astro.props
+const PAGE_TYPES = ['Page', 'Post']
+interface MenuItemLinkableExtended extends MenuItemLinkable {
+	__typename?: string
+}
+const type = (item?.connectedNode?.node as MenuItemLinkableExtended)?.__typename
+const isCustomLink = !PAGE_TYPES.includes(type!)
+---
+
+<li>
+	<a
+		href={item.path === '/' || isCustomLink
+			? item.path
+			: type === 'Page'
+				? `/page${item.path}`
+				: `/post${item.path}`}
+	>
+		{item.label}
+	</a>
+</li>

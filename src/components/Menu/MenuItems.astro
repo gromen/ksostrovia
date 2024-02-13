@@ -1,0 +1,15 @@
+---
+import type { MenuItem } from '../../generated/graphql'
+import MenuItem from '././MenuItem.astro'
+const { items } = Astro.props
+---
+
+<nav>
+	<ul class="flex gap-5">
+		{
+			items?.map(({ node }: { node: MenuItem }) => {
+				return <MenuItem item={node} />
+			})
+		}
+	</ul>
+</nav>

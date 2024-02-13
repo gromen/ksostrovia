@@ -1,5 +1,4 @@
 ---
-import Layout from '../../layouts/Layout.astro'
 import { queryPageBy } from '../../shared/queries'
 import type { Post } from '../../generated/graphql'
 import LayoutPage from '../../layouts/LayoutPage.astro'
@@ -8,7 +7,7 @@ const { uri } = Astro.params
 if (!uri) return `<p>Provide uri</p>`
 
 const post = (await queryPageBy(uri)) as Post
-const date = new Date(post.date)
+const date = new Date(post.date as string)
 const datePost = new Intl.DateTimeFormat('pl-PL').format(date)
 const breadcrumbs = [
 	{ url: '/', label: 'Home' },
