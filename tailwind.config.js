@@ -5,7 +5,12 @@ module.exports = {
 	theme: {
 		colors: {
 			'primary-1': '#059240',
-			'primary-2': '#fff500'
+			'primary-2': '#fffb00',
+			white: '#fff',
+			'gray-800': 'gray'
+		},
+		borderRadius: {
+			DEFAULT: '10px'
 		}
 	}
 }

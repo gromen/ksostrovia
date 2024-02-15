@@ -1,0 +1,13 @@
+---
+const { title = 'default title', isRounded = true } = Astro.props
+---
+
+<div class="heading p-4" class:list={[{ 'rounded-t': isRounded }]}>
+	<h3 class="font-bold text-white">{title}</h3>
+</div>
+<style>
+	.heading {
+		background: rgb(255, 251, 0);
+		background: linear-gradient(54deg, theme(colors.primary-1) 0%, theme(colors.primary-2) 74%);
+	}
+</style>

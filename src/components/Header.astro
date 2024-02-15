@@ -10,7 +10,7 @@ const menuItems = (await queryMenuItems()) as MenuItem[]
 ---
 
 <header
-	class="md-pb-20 m-auto flex w-full items-center justify-between px-3 pb-10 md:w-[800px] lg:w-[1200px] lg:max-w-[calc(100%-2rem)]"
+	class="md-pb-20 m-auto flex w-full items-center justify-between px-3 pb-10 lg:w-[1200px] lg:max-w-[calc(100%-2rem)]"
 >
 	<a href={routes.home} class="flex items-center gap-5">
 		<img
@@ -25,10 +25,5 @@ const menuItems = (await queryMenuItems()) as MenuItem[]
 			<span class="block text-2xl">Ostrów Mazowiecka</span>
 		</div>
 	</a>
-	<!--<div class="space-y-2">-->
-	<!--	<span class="block h-0.5 w-5 bg-primary-1"></span>-->
-	<!--	<span class="block h-0.5 w-8 bg-primary-1"></span>-->
-	<!--	<span class="block h-0.5 w-8 bg-primary-1"></span>-->
-	<!--</div>-->
-	<MenuItems items={menuItems} />
+	<MenuItems items={menuItems} logo={logo} />
 </header>

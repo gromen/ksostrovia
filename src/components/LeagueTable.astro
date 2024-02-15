@@ -1,0 +1,61 @@
+---
+import type { Row } from '../types'
+import Heading from './UI/Heading.astro'
+const url =
+	'https://sofascore.p.rapidapi.com/tournaments/get-standings?tournamentId=20137&seasonId=52791&type=total'
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': import.meta.env.SOFASCORE_TOKEN,
+		'X-RapidAPI-Host': 'sofascore.p.rapidapi.com'
+	}
+}
+let result
+try {
+	const response = await fetch(url, options)
+	result = await response.json()
+	result = result.standings[0]
+} catch (error) {
+	console.error(error)
+}
+---
+
+<table class="table-auto">
+	<Heading title={result.tournament.name} />
+	<thead class="">
+		<tr>
+			<th scope="col"><abbr title="Pozycja">Poz</abbr></th>
+			<th class="team" scope="col">Klub</th>
+			<th scope="col"><abbr title="Mecze">M</abbr></th>
+			<th scope="col"><abbr title="Rożnica bramek">RB</abbr></th>
+			<th scope="col"><abbr title="Punkty">Pkt</abbr></th>
+		</tr>
+	</thead>
+	<tbody class="">
+		{
+			result?.rows.map((row: Row) => (
+				<tr class="">
+					<td class="pr-5 text-right">
+						<span class="value">{row.position}</span>
+					</td>
+					<td class="team">
+						<a class="flex" href="#">
+							<span class="badge badge-image-container mr-3">
+								<img
+									alt="klub ks"
+									src="https://ksostrovia.haris-instal.pl/wp-content/uploads/2024/02/logo-ks-ostrovia.png"
+									width="30"
+									height="30"
+								/>
+							</span>
+							{row.team.name}
+						</a>
+					</td>
+					<td class="pl-2">{row.matches}</td>
+					<td class="px-3 text-right">{row.scoresFor - row.scoresAgainst}</td>
+					<td class="text-right font-bold">{row.points}</td>
+				</tr>
+			))
+		}
+	</tbody>
+</table>

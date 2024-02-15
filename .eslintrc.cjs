@@ -2,8 +2,14 @@ module.exports = {
 	// ...
 	extends: [
 		// ...
+		'eslint:recommended',
 		"plugin:astro/recommended",
+		'plugin:astro/jsx-a11y-strict'
 	],
+	parserOptions: {
+		ecmaVersion: 'latest',
+		sourceType: 'module',
+	},
 	// ...
 	overrides: [
 		{
@@ -19,7 +25,20 @@ module.exports = {
 			},
 			rules: {
 				// override/add rules settings here, such as:
-				// "astro/no-set-html-directive": "error"
+				// "astro/no-set-html-directive": "error",
+				"astro/prefer-class-list-directive": "error"
+			},
+		},
+		{
+			files: ['*.ts'],
+			parser: '@typescript-eslint/parser',
+			extends: ['plugin:@typescript-eslint/recommended'],
+			rules: {
+				'@typescript-eslint/no-unused-vars': [
+					'error',
+					{ argsIgnorePattern: '^_', destructuredArrayIgnorePattern: '^_' },
+				],
+				'@typescript-eslint/no-non-null-assertion': 'off',
 			},
 		},
 		// ...
