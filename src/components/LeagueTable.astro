@@ -20,8 +20,8 @@ try {
 }
 ---
 
-<table class="table-auto">
-	<Heading title={result.tournament.name} />
+<Heading title={result.tournament.name} classes={['md:w-3/5']} />
+<table class="table-auto md:w-3/5">
 	<thead class="">
 		<tr>
 			<th scope="col"><abbr title="Pozycja">Poz</abbr></th>
@@ -34,11 +34,11 @@ try {
 	<tbody class="">
 		{
 			result?.rows.map((row: Row) => (
-				<tr class="">
-					<td class="pr-5 text-right">
+				<tr class="border-b-gray-100 border-b py-[1rem] last:border-0">
+					<td class="pr-5 text-right ">
 						<span class="value">{row.position}</span>
 					</td>
-					<td class="team">
+					<td class="h-[3rem] font-semibold">
 						<a class="flex" href="#">
 							<span class="badge badge-image-container mr-3">
 								<img
@@ -48,7 +48,7 @@ try {
 									height="30"
 								/>
 							</span>
-							{row.team.name}
+							{row.team.name.replace('Klub Sportowy', 'KS')}
 						</a>
 					</td>
 					<td class="pl-2">{row.matches}</td>

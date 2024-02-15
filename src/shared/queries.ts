@@ -77,6 +77,19 @@ export const queryPost = async (slug: string) => {
 				date
 				title
 				slug
+				featuredImage {
+					node {
+						mediaItemUrl
+						altText
+						mediaDetails {
+							height
+							width
+							sizes {
+								file
+							}
+						}
+					}
+				}
 			}
 		}`
 	})

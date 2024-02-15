@@ -3,9 +3,16 @@ import { queryPostsAll } from '../../shared/queries'
 import type { Post } from '../../generated/graphql'
 import Layout from '../../layouts/Layout.astro'
 import BlogPost from '../../components/BlogPost.astro'
+import { routes } from '../../shared/routes'
 const posts = (await queryPostsAll()) as Post[]
 ---
 
 <Layout title="Wszystkie posty">
-	{posts?.map((post) => <BlogPost post={post} />)}
+	{
+		posts?.map((post) => (
+			<a class="mb-10 block" href={routes.posts.single(post.slug)}>
+				<BlogPost post={post} />
+			</a>
+		))
+	}
 </Layout>

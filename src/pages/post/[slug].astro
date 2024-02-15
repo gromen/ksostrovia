@@ -1,21 +1,27 @@
 ---
 import { queryPost } from '../../shared/queries'
-import type { Post } from '../../generated/graphql'
-import LayoutPage from '../../layouts/LayoutPage.astro'
+import Layout from '../../layouts/Layout.astro'
 
+import type { PostProp } from '../../types'
+import { formatDate } from '../../utils/utils'
 const { slug } = Astro.params
 if (!slug) return `<p>Provide slug</p>`
-const post = (await queryPost(slug)) as Post
-const breadcrumbs = [
-	{ url: '/', label: 'Home' },
-	{ url: `/${slug}`, label: slug?.split('-').join(' '), currentPage: true }
-]
+const post = (await queryPost(slug)) as PostProp
 ---
 
-<LayoutPage title={`${slug} | Ks Ostrovia`} breadcrumbs={breadcrumbs}>
+<Layout title={`${slug} | Ks Ostrovia`}>
 	<article class="text-primary">
-		<h1>{post.title}</h1>
-		<time>{post.date}</time>
+		<h1 class="mb-3 mt-5 text-3xl font-bold">{post.title}</h1>
+		<figure>
+			<img
+				class="aspect-video w-full"
+				src={post.featuredImage?.node.mediaItemUrl}
+				alt={post.featuredImage?.node.altText}
+				width={post.featuredImage?.node.mediaDetails.width}
+				height={post.featuredImage?.node.mediaDetails.height}
+			/>
+		</figure>
+		<time class="mb-3 block text-gray-800">{formatDate(post.date as number)}</time>
 		<p set:html={post.content} />
 	</article>
-</LayoutPage>
+</Layout>

@@ -7,10 +7,14 @@ module.exports = {
 			'primary-1': '#059240',
 			'primary-2': '#fffb00',
 			white: '#fff',
+			'gray-100': '#ebe5eb',
 			'gray-800': 'gray'
 		},
 		borderRadius: {
 			DEFAULT: '10px'
+		},
+		zIndex: {
+			menu: '90'
 		}
 	}
 }

@@ -1,8 +1,8 @@
 ---
-const { title = 'default title', isRounded = true } = Astro.props
+const { title = 'default title', isRounded = true, classes } = Astro.props
 ---
 
-<div class="heading p-4" class:list={[{ 'rounded-t': isRounded }]}>
+<div class="heading p-4" class:list={[{ 'rounded-t': isRounded }, classes]}>
 	<h3 class="font-bold text-white">{title}</h3>
 </div>
 <style>
