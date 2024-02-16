@@ -19,6 +19,4 @@ const { thumbnails = false } = Astro.props
 <article class="w-full">
 	<h1 class="my-4 text-2xl font-bold">{post.title}</h1>
 	{!thumbnails ? <p set:html={post.excerpt} /> : null}
-
-	<!--<p set:html={post.content} />-->
 </article>
