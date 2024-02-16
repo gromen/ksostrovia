@@ -1,3 +1,5 @@
 export function formatDate(date: Date | number | string) {
-	return new Intl.DateTimeFormat('pl-PL').format(new Date(date))
+	const parsedDate = new Date(date)
+	if (!parsedDate) throw new Error('Invalid date')
+	return new Intl.DateTimeFormat('pl-PL').format(parsedDate)
 }

@@ -21,7 +21,7 @@ const post = (await queryPost(slug)) as PostProp
 				height={post.featuredImage?.node.mediaDetails.height}
 			/>
 		</figure>
-		<time class="mb-3 block text-gray-800">{formatDate(Number(post.date))}</time>
-		<p set:html={post.content} />
+		{post.date && <time class="mb-3 block text-gray-800">{formatDate(post.date)}</time>}
+		<div set:html={post.content} />
 	</article>
 </Layout>
