@@ -1,5 +1,6 @@
 ---
 import type { Row } from '../types'
+import { Image } from 'astro:assets'
 
 interface Props {
 	row: Row
@@ -14,8 +15,8 @@ const { row } = Astro.props as Props
 	</td>
 	<td class="h-[3rem] font-semibold">
 		<a class="flex" href="#">
-			<span class="badge badge-image-container mr-3">
-				<img
+			<span class="badge mr-3">
+				<Image
 					alt="Team logo"
 					src="https://ksostrovia.haris-instal.pl/wp-content/uploads/2024/02/logo-ks-ostrovia.png"
 					width="30"

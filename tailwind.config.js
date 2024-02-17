@@ -12,9 +12,6 @@ module.exports = {
 		},
 		borderRadius: {
 			DEFAULT: '10px'
-		},
-		zIndex: {
-			menu: '90'
 		}
 	}
 }

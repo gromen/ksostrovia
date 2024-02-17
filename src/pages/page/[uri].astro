@@ -1,7 +1,7 @@
 ---
 import { queryPageBy } from '../../shared/queries'
 import type { Post } from '../../generated/graphql'
-import LayoutPage from '../../layouts/LayoutPage.astro'
+import Layout from '../../layouts/Layout.astro'
 
 const { uri } = Astro.params
 if (!uri) return `<p>Provide uri</p>`
@@ -9,16 +9,12 @@ if (!uri) return `<p>Provide uri</p>`
 const post = (await queryPageBy(uri)) as Post
 const date = new Date(post.date as string)
 const datePost = new Intl.DateTimeFormat('pl-PL').format(date)
-const breadcrumbs = [
-	{ url: '/', label: 'Home' },
-	{ url: `/${uri}`, label: uri?.split('-').join(' '), currentPage: true }
-]
 ---
 
-<LayoutPage title={`${uri} | Ks Ostrovia`} breadcrumbs={breadcrumbs}>
+<Layout title={`${uri} | Ks Ostrovia`}>
 	<article>
 		<h1 class="md:mb-15 mb-10 text-5xl font-semibold">{post?.title}</h1>
 		<time>{datePost}</time>
 		<p set:html={post?.content} />
 	</article>
-</LayoutPage>
+</Layout>

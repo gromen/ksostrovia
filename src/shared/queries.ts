@@ -1,4 +1,4 @@
-import { fetchApi } from '../../lib/api.ts'
+import { fetchApi } from '../api/api.ts'
 
 export const queryLogo = async () => {
 	const data = await fetchApi({

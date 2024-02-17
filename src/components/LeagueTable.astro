@@ -2,26 +2,12 @@
 import type { Row } from '../types'
 import Heading from './UI/Heading.astro'
 import TeamRow from './TeamRow.astro'
-const url =
-	'https://sofascore.p.rapidapi.com/tournaments/get-standings?tournamentId=20137&seasonId=52791&type=total'
-const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': import.meta.env.SOFASCORE_TOKEN,
-		'X-RapidAPI-Host': 'sofascore.p.rapidapi.com'
-	}
-}
-let result
-try {
-	const response = await fetch(url, options)
-	result = await response.json()
-	result = result.standings[0]
-} catch (error) {
-	console.error(error)
-}
+import { getLeagueTable } from '../api/services/sofaScoreServices'
+const response = await getLeagueTable('20137', '52791')
+const result = response.standings[0]
 ---
 
-<Heading title={result.tournament.name} classes={['md:w-3/5']} />
+<Heading title={result?.tournament.name} classes={['md:w-3/5']} />
 <table class="table-auto md:w-3/5">
 	<thead class="">
 		<tr>
