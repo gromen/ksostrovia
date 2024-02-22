@@ -3,7 +3,6 @@ const BASE_URL = 'https://sofascore.p.rapidapi.com'
 
 export async function fetchFromSofaScore(url: string, options = {}) {
 	const baseUrl = `${BASE_URL}${url}`
-	console.log({ baseUrl })
 	const defaultOptions = {
 		method: 'GET',
 		headers: {
