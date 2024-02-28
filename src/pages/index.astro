@@ -2,12 +2,17 @@
 import Layout from '../layouts/Layout.astro'
 import BlogPosts from '../components/BlogPosts.astro'
 import LeagueTable from '../components/LeagueTable.astro'
+import Slider from '../components/Slider'
+import sliderData from '../data/sliderData.json'
+
 import '../styles/global.css'
+
 ---
 
 <Layout title="Welcome to KS Ostrovia!!">
-	<BlogPosts count="3" />
+	<BlogPosts count="3" />	
 	<LeagueTable />
+	<Slider client:load data={sliderData} />
 </Layout>
 
 <style>
